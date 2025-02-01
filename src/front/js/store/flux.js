@@ -7,6 +7,7 @@ const getState = ({ getStore, getActions, setStore }) => {
       videojuegos: [],
       accesorios: [],
       subscriptions: [],
+      selectedSubscriptions: [],
       selectedProduct: null,
       promoted: [],
       isLogged: localStorage.getItem("Token") ? true : false,

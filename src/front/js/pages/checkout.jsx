@@ -66,7 +66,7 @@ export const Checkout = () => {
             <div>
               <p>{store.user.userName}</p>
               <p>{store.user.email}</p>
-              <p>Estado: {store.user.subscription ? 'Premium' : 'Basic'}</p>
+              <p>Estado: {store.user.subscription ? 'Premium' : 'Basico'}</p>
             </div>
           </div>
         )}
