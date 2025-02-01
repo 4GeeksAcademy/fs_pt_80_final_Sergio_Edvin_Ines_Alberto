@@ -93,7 +93,7 @@ export const CheckoutForm = ({ totalAmount }) => {
     <form onSubmit={handleSubmit} className="stripey">
       <CardElement />
       <button className="btn-stripe" type="submit" disabled={!stripe || loading}>
-        <strong>Pay</strong>
+        <strong>Pagar</strong>
       </button>
     </form>
   );

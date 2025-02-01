@@ -35,7 +35,7 @@ def setup_commands(app):
     def insert_test_data():
         pass
     @app.cli.command('dummy')
-   
+    def dummy():
         with open('src/api/products.json', 'r') as file:
             data = json.load(file)
         with open('src/api/users.json', 'r') as file_2:
@@ -136,7 +136,7 @@ def setup_commands(app):
             prod.product_id = i['product_id']
             db.session.add(prod)
             db.session.commit()         
- def insert_dummy():
+ 
 
 
       

@@ -336,7 +336,7 @@ export const Contacto = () => {
                 
                         <div className="premium-container" style={{ display: 'flex', alignItems: 'center' }}>
     <Link className="premium-button" to="/suscripcion" style={{ marginRight: '10px' }}>
-        Go Premium
+    Hazte Premium
     </Link>
     <img
         src="https://res.cloudinary.com/dr0wlij0c/image/upload/v1736455865/web-illustrations/r5r3z9kfuqd95yennokv.png"
