@@ -67,6 +67,8 @@
     }
   
     .faq-home-button{
+      margin: auto;
+      width: 80%;
       margin-top: 20px;
       background-color: #FCEE21;
       border-radius: 10px;
@@ -74,14 +76,14 @@
       font-family: "Kode Mono", serif;
       color: black;
       border: none;
-      font-size: 40px;
+      font-size: 30px;
       padding: 3px 13px;
       transition: all ease 0.4s;
       text-decoration: none;
     }
   
     .faq-home-button:hover{
-      transform: scale(1.05);
+      transform: scale(1.05) !important;
     }
   
     @media(max-width: 992px){

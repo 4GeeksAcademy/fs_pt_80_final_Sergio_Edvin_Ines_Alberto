@@ -23,41 +23,39 @@ CORS(api)
 
 ## ······················································· Cómo USER (profile):
 
-@api.route('/register', methods=['POST'])          
+@api.route('/register', methods=['POST'])
 def register():
     try:
-        # aqui extraemos info
+        # Aquí extraemos los datos del JSON
         email = request.json.get('email', None)
         password = request.json.get('password', None)
         userName = request.json.get('userName', None)
-        address = request.json.get('address', None)
-        postalCode = request.json.get('postalCode', None)
-        city = request.json.get('city', None)
 
-
-        # aqui chequeamos que toda la info este
-        if not email and not password and not userName and not address and not city and not postalCode:
+        if not email or not password or not userName:
             return jsonify({'msg': 'Missing data'}), 400
-        
-        # aqui chequeamos si usuario existe
-        check_user= Users.query.filter_by(email=email).first()
 
-        # en caso no existe -> creamos usario
-        if not check_user:
-            new_user = Users(email=email, password=password, userName=userName, address=address, city=city, postalCode=postalCode)  # aqui se creo nuevo usuario
-            db.session.add(new_user)                                         # aqui se agrego a la tabla
-            db.session.commit()                                                #aqui se almacena cambios en la base de datos
-            expires = datetime.timedelta(days=1)
-            access_token = create_access_token(identity=str(check_user.id), expires_delta=expires)
-            
+        # Verificamos si el usuario ya existe
+        check_user = Users.query.filter_by(email=email).first()
 
+        if check_user:  # Si el usuario ya existe, devolvemos un error
+            return jsonify({"msg": "User already registered"}), 400
 
-            return {"msg": "okey", 'token': access_token, 'user': new_user.serialize()}, 201
-        # si existe usuario, devolvemos que ya hay una cuenta con ese correo
-        return jsonify({"msg": "User already registered"}), 400
+        new_user = Users(email=email, password=password, userName=userName)
+
+        db.session.add(new_user)
+        db.session.commit()
+
+        # Creamos un token para el nuevo usuario
+        expires = datetime.timedelta(days=1)
+        access_token = create_access_token(identity=str(new_user.id), expires_delta=expires)
+
+      
+        return {"msg": "okey", 'token': access_token, 'user': new_user.serialize()}, 201
+
     except Exception as error:
+  
         db.session.rollback()
-        return jsonify({'error':str(error)}), 400
+        return jsonify({'error': str(error)}), 400
     
 
 @api.route('/user/<int:user_id>', methods=['PUT'])       

@@ -1,20 +1,32 @@
 .bg-image {
     height: 100vh; 
+    background-image: url(https://res.cloudinary.com/dr0wlij0c/image/upload/v1738435233/perfil-long_kcfdc2.png);
+    background-size: cover;
+    background-position: right top;
 }
 
-.bg-image img {
-    height: 100%; 
-    object-fit: cover; 
-}
+
 
 .form-container {
     max-width: 100%;
     width: 100%;
-    color: #4c4b4b;
-    margin-bottom: 20px;
+    color: #5C5C60;
     padding-bottom: 20px;
 }
 
+.my-form-control{
+    background-color: #29292c ;
+    padding: 5px 10px;
+    color: #EDEDEF;
+    border: none;
+    border-radius: 50px;
+
+}
+.my-form-control:focus, .my-form-control:active{
+    outline: 1px solid #fced2186;
+    color:  #FFFFFF;
+    box-sizing: border-box;
+}
 
 
 .profile-icon {
@@ -28,46 +40,30 @@
 .form-control {
     border-radius: 20px; 
 }
-
-.btn-crear-perfil {
-    background-color: #FCEE21; 
-    color: #000; 
-    font-family: "Kode Mono", serif;
-    font-size: 3rem; 
-    font-weight: bold; 
-    border: none; 
-    border-radius: 5px; 
-    padding: 2.5% 10%; 
-    text-align: center;
-    display: block;
-    margin: 0 auto; 
-    cursor: pointer; 
-    transition: transform 0.2s ease;
-    margin-bottom: 20px;
+.my-form-column{
+    margin-left: -5%;
+    margin-top:-5%;
 }
-
-.btn-crear-perfil:hover {
-    transform: scale(1.05);
-    background-color: #ffd700;
-}
-
-.btn-crear-perfil:active {
-    transform: scale(0.95);
-}
-
-
-
 
 .btn-primary {
-    background-color: #007bff;
+    background-color: #3A39FF;
     color: #fff;
     font-weight: bold;
 }
 
 .btn-secondary {
-    background-color: #6c757d;
-    color: #fff;
-    font-weight: bold;
+    font-size: 20px;
+    border: none;
+    background-color: transparent;
+    color: #08B5F9;
+    font-weight: 400;
+    text-decoration: underline;
+}
+.btn-secondary:hover {
+    cursor: pointer;
+    background-color: transparent;
+    color: #08B5F9;
+    transform:scale(1.05);
 }
 
 .profile-container-log {
@@ -130,22 +126,6 @@
 .profile-description-log {
     text-align: center;
     color: #eee;
-}
-
-.btn-premium-log {
-    padding: 10px 20px;
-    background-color: #ffd700;
-    color: #000;
-    font-weight: bold;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: transform 0.2s ease;
-}
-
-.btn-premium-log:hover {
-    transform: scale(1.05);
-    background-color: #e5c100;
 }
 
 .favorites-container-log, .showcase-container-log {
@@ -266,4 +246,10 @@ h2 {
     width: 100%; /* Asegura que ocupe todo el ancho disponible */
     display: flex;
     justify-content: center; /* Centra el botón horizontalmente */
+}
+
+@media(max-width:767px){
+    .my-form-column{
+        margin-left: 5%;
+    }
 }

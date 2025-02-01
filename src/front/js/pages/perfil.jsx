@@ -16,7 +16,6 @@ export const Perfil = () => {
             const data = await actions.getUserProfile(store.user.id); // Obtiene el perfil del usuario actual
             setUserData(data);
             setFollowedUsers(new Set(data?.following_users.map(user => user.id))); // Guardamos los seguidos en local
-            
 
             if (data?.favorites?.length > 0) {
                 // Obtener los detalles de los productos favoritos
@@ -30,12 +29,12 @@ export const Perfil = () => {
         fetchUserData();
     }, [store.user.id]);
 
-     // Función para obtener usuarios desde la API
-     const fetchUsers = async () => {
+    // Función para obtener usuarios desde la API
+    const fetchUsers = async () => {
         console.log("Cargando usuarios desde el action getAllUsers...");
         await actions.getAllUsers(); // Llama al action en flux.js
         const allUsers = store.users; // Lista global de usuarios desde el store
-    
+
         // Actualizamos followedUsers para incluir la lista actualizada del usuario
         const updatedUserData = await actions.getUserProfile(store.user.id);
         setFollowedUsers(new Set(updatedUserData.following_users.map(user => user.id))); // Sincroniza los seguidos
@@ -56,7 +55,7 @@ export const Perfil = () => {
             await actions.followUser(userId);
             setFollowedUsers(prev => new Set(prev).add(userId));
         }
-    
+
         // Refrescar el perfil del usuario actual después de seguir o dejar de seguir
         const updatedUserData = await actions.getUserProfile(store.user.id);
         setUserData(updatedUserData);
@@ -65,14 +64,10 @@ export const Perfil = () => {
     const handleLogout = () => {
         actions.logout(); // Llama a la función logout definida en flux.js
     };
-    
-    
-    
 
     useEffect(() => {
         setUsers(store.users);
     }, [store.users]); // Se ejecuta cuando cambia la lista global de usuarios
-    
 
     // Función para manejar el clic en el botón "+ Usuarios"
     const handleShowUserList = async () => {
@@ -82,33 +77,42 @@ export const Perfil = () => {
         }
         setShowUserList(!showUserList);
     };
-    
 
-    // Estado para controlar si se muestra "Registrarse" o "Login"
-    const [isRegister, setIsRegister] = useState(false);
     const [formData, setFormData] = useState({
-        email:"",
-        password:"",
-        repeatPassword:"",
-        userName:""
+        email: '',
+        password: '',
+        userName: ''
     });
+    const [repeatPassword, setRepeatPassword] = useState('');
 
     const [formData1, setFormData1] = useState({
-        email:"",
-        password:""
+        email: "",
+        password: ""
     });
 
-    const handleChange=e => setFormData({...formData,[e.target.name]:e.target.value})
-    const handleChange1=e => setFormData1({...formData1,[e.target.name]:e.target.value})
+    const [isRegister, setIsRegister] = useState(false);
+
+    const handleChange = (e) => {
+        const { name, value } = e.target;
+        setFormData({
+            ...formData,
+            [name]: value
+        });
+    };
+    
+    const handleRepeatPasswordChange = (e) => {
+        setRepeatPassword(e.target.value);
+    };
+    const handleChange1 = e => setFormData1({ ...formData1, [e.target.name]: e.target.value });
 
     useEffect(() => {
-            window.scrollTo(0, 0); 
-        }, []);
+        window.scrollTo(0, 0);
+    }, []);
 
     useEffect(() => {
         console.log("Estado de showUserList:", showUserList);
     }, [showUserList]);
-        
+
     const filteredUsers = users.filter(user => user.id !== store.user.id);
 
     if (store.isLogged && !userData) {
@@ -146,11 +150,11 @@ export const Perfil = () => {
                                 onClick={handleShowUserList}
                             >
                                 + Usuarios
-                            </button> 
+                            </button>
                         </div>
                     </div>
                 </div>
-    
+
                 {/* Modal de lista de usuarios */}
                 {showUserList && (
                     <div className="user-list-modal">
@@ -162,7 +166,6 @@ export const Perfil = () => {
                                     <div key={user.id} className="user-item">
                                         <img src={user.avatar || "default-avatar.png"} alt={user.userName} className="user-avatar" />
                                         <div className="user-info">
-                                            {/* Hacemos el nombre del usuario clicable */}
                                             <Link to={`/perfil/${user.id}`} className="user-name-link">
                                                 <h5>{user.userName}</h5>
                                             </Link>
@@ -182,7 +185,7 @@ export const Perfil = () => {
                         </div>
                     </div>
                 )}
-    
+
                 <div className="profile-description-log">
                     <p>{userData.description || "Descripción no proporcionada."}</p>
                     {!userData.subscription && (
@@ -192,7 +195,7 @@ export const Perfil = () => {
                 <div className="profile-section-log">
                     <h2>Favoritos</h2>
                     <div className="horizontal-scrollable">
-                    <div className="row flex-nowrap pt-1">
+                        <div className="row flex-nowrap pt-1">
                             {favoritesDetails.length > 0 ? (
                                 favoritesDetails.map((fav) => (
                                     <div key={fav.id} className="favorite-item-log">
@@ -227,218 +230,154 @@ export const Perfil = () => {
             </div>
         );
     }
-        
+
     return (
-        <div className="container-fluid min-vh-100">
-            <div className="row h-100">
+        <div className="container-fluid">
+            <div className="row">
                 {/* Sección de la imagen */}
-                <div className="col-md-7 bg-image p-0 d-none d-md-block">
-                    <img
-                        src="https://res.cloudinary.com/dr0wlij0c/image/upload/v1736524948/web-illustrations/pahoayuyvzokhyh6mj03.png"
-                        alt="Icono"
-                        className="w-100 h-100"
-                    />
-                </div>
+                <div className="col-md-7 bg-image p-0 d-none d-md-block"></div>
                 {/* Sección del formulario o botones iniciales */}
-                <div className="col-md-5 d-flex align-items-center justify-content-center form-alt">
-                    <div className="form-container p-5 rounded text-center">
+                <div className="col-md-5 d-flex align-items-center justify-content-center form-alt my-form-column" style={{ maxWidth: '550px' }}>
+                    <div className="form-container rounded text-center">
                         
                         {/* Si elige "Registrarse", muestra el formulario */}
                         {isRegister === true && (
-                            <form
-                                onSubmit={async (e) => {
-                                    e.preventDefault(); 
-
-                                    // Extraemos los valores de los campos
-                                    const email = e.target.email.value;
-                                    const password = e.target.password.value;
-                                    const repeatPassword = e.target.repeatPassword.value;
-                                    const userName = e.target.nombre.value;
-
-
-                                    // Verificamos que las contraseñas coincidan
-                                    if (formData.password !== formData.repeatPassword) {
-                                        return;
-                                    }
-
-                                    actions.register(formData)
-                                    
-                                }}
-                            >
-                            <div className="text-center mb-4">
-                                <img
-                                    src="https://res.cloudinary.com/dr0wlij0c/image/upload/v1736453861/web-illustrations/user.png"
-                                    alt="Perfil"
-                                    className="profile-icon mb-3"
-                                />
-                            </div>
-                            <div className="mb-3">
-                                <label htmlFor="email" className="form-label">
-                                    Email*
-                                </label>
-                                <input
-                                    type="email"
-                                    className="form-control bg-dark text-white border-0"
-                                    id="email"
-                                    placeholder="ejemplo@ejemplo.com"
-                                    required
-                                    name="email"
-                                    value = {formData.email}
-                                    onChange={handleChange}
-                                />
-                            </div>
-                            <div className="mb-3">
-                                <label htmlFor="password" className="form-label">
-                                    Contraseña*
-                                </label>
-                                <input
-                                    type="password"
-                                    className="form-control bg-dark text-white border-0"
-                                    id="password"
-                                    placeholder="Contraseña"
-                                    required
-                                    name="password"
-                                    value = {formData.password}
-                                    onChange={handleChange}
-                                />
-                            </div>
-                            <div className="mb-3">
-                                <label htmlFor="repeatPassword" className="form-label">
-                                    Repetir Contraseña*
-                                </label>
-                                <input
-                                    type="password"
-                                    className="form-control bg-dark text-white border-0"
-                                    id="repeatPassword"
-                                    placeholder="Repite tu contraseña"
-                                    required
-                                    name="repeatPassword"
-                                    value = {formData.repeatPassword}
-                                    onChange={handleChange}
-                                />
-                            </div>
-                            <div className="mb-3">
-                                <label htmlFor="nombre" className="form-label">
-                                    Nombre*
-                                </label>
-                                <input
-                                    type="text"
-                                    className="form-control bg-dark text-white border-0"
-                                    id="userName"
-                                    placeholder="Username"
-                                    required
-                                    name="userName"
-                                    value = {formData.userName}
-                                    onChange={handleChange}
-
-                        
-                                />
-                            </div>
-                            <div className="mb-3">
-                                <label htmlFor="sobre" className="form-label">
-                                    Sobre ti
-                                </label>
-                                <textarea
-                                    className="form-control bg-dark text-white border-0"
-                                    id="sobre"
-                                    rows="3"
-                                    placeholder="Escribe algo sobre ti"
-                                ></textarea>
-                            </div>
-                            <div className="mb-3">
-                                <label htmlFor="direccion" className="form-label">
-                                    Dirección*
-                                </label>
-                                <input
-                                    type="text"
-                                    className="form-control bg-dark text-white border-0"
-                                    id="direccion"
-                                    placeholder="Dirección"
-                                    required
-                                />
-                            </div>
-                            <div className="row g-3">
-                                <div className="col-md-6">
-                                    <label htmlFor="ciudad" className="form-label">
-                                        Ciudad*
-                                    </label>
-                                    <input
-                                        type="text"
-                                        className="form-control bg-dark text-white border-0"
-                                        id="ciudad"
-                                        placeholder="Ciudad"
-                                        required
-                                    />
-                                </div>
-                                <div className="col-md-6">
-                                    <label htmlFor="cp" className="form-label">
-                                        CP*
-                                    </label>
-                                    <input
-                                        type="text"
-                                        className="form-control bg-dark text-white border-0"
-                                        id="cp"
-                                        placeholder="Código Postal"
-                                        required
-                                    />
-                                </div>
-                            </div>
-                            <button type="submit" className="btn btn-crear-perfil mt-4">
-                                Crear perfil
-                            </button>
-
-                            <button
-                                    className="btn btn-secondary w-100 mt-4"
-                                    onClick={() => setIsRegister(false)}
-                                >
-                                    Login
-                                </button>
-                        </form>
+                         <form
+                         onSubmit={async (e) => {
+                             e.preventDefault(); // Prevenir la acción por defecto del formulario (recarga de página)
+                     
+                             const { email, password, userName } = formData;
+                     
+                             // Verificamos que las contraseñas coincidan
+                             if (password !== repeatPassword) {
+                                 alert('Las contraseñas no coinciden');
+                                 return;
+                             }
+                     
+                             // Crea un nuevo objeto solo con los campos necesarios para el backend
+                             const formDataForBackend = {
+                                 email,
+                                 password,
+                                 userName
+                             };
+                     
+                             // Llamada a la acción de registro con los datos correctos
+                             await actions.register(formDataForBackend);
+                         }}
+                     >
+                         <div className="text-center mb-4">
+                             <h3>Crear Cuenta</h3>
+                         </div>
+                         <div className="mb-3">
+                             <label htmlFor="userName" className="form-label">
+                                 Nombre de usuario*
+                             </label>
+                             <input
+                                 type="text"
+                                 className="my-form-control w-100"
+                                 id="userName"
+                                 placeholder="Nombre de usuario"
+                                 required
+                                 name="userName"
+                                 value={formData.userName}
+                                 onChange={handleChange}
+                             />
+                         </div>
+                         <div className="mb-3">
+                             <label htmlFor="email" className="form-label">
+                                 Email*
+                             </label>
+                             <input
+                                 type="email"
+                                 className="my-form-control w-100"
+                                 id="email"
+                                 placeholder="ejemplo@ejemplo.com"
+                                 required
+                                 name="email"
+                                 value={formData.email}
+                                 onChange={handleChange}
+                             />
+                         </div>
+                         <div className="mb-3">
+                             <label htmlFor="password" className="form-label">
+                                 Contraseña*
+                             </label>
+                             <input
+                                 type="password"
+                                 className="my-form-control w-100"
+                                 id="password"
+                                 placeholder="Contraseña"
+                                 required
+                                 name="password"
+                                 value={formData.password}
+                                 onChange={handleChange}
+                             />
+                         </div>
+                         <div className="mb-3">
+                             <label htmlFor="repeatPassword" className="form-label">
+                                 Repetir Contraseña*
+                             </label>
+                             <input
+                                 type="password"
+                                 className="my-form-control w-100"
+                                 id="repeatPassword"
+                                 placeholder="Repite tu contraseña"
+                                 required
+                                 name="repeatPassword"
+                                 value={repeatPassword} // Usamos el estado repeatPassword
+                                 onChange={handleRepeatPasswordChange} // Manejamos su cambio con esta función
+                             />
+                         </div>
+                     
+                         <div className="d-flex flex-column">
+                             <button type="submit" className="btn faq-home-button mt-4">
+                                 Crear perfil
+                             </button>
+                     
+                             <a
+                                 className="btn-secondary mt-2"
+                                 onClick={() => setIsRegister(false)}
+                             >
+                                 Login
+                             </a>
+                         </div>
+                     </form>
+                     
                         )}
+
+                        {/* Formulario de login */}
                         {isRegister === false && (
                             <form
                                 onSubmit={async (e) => {
-                                    e.preventDefault(); 
-                                    const email = e.target.email.value;
-                                    const password = e.target.password.value;
-
-                                    actions.login(formData1)
-                                
+                                    e.preventDefault();
+                                    actions.login(formData1);
                                 }}
                             >
                                 <div className="mb-3">
-                                    <label htmlFor="email" className="form-label">
-                                        Email*
-                                    </label>
+                                    <label htmlFor="email" className="form-label">Email*</label>
                                     <input
                                         type="email"
-                                        className="form-control bg-dark text-white border-0"
+                                        className="my-form-control w-100"
                                         id="email"
                                         name="email"
-                                        placeholder="ejemplo@ejemplo.com"
+                                        value={formData1.email}
+                                        onChange={handleChange1}
                                         required
-                                    value = {formData1.email}
-                                    onChange={handleChange1}
                                     />
                                 </div>
                                 <div className="mb-3">
-                                    <label htmlFor="password" className="form-label">
-                                        Contraseña*
-                                    </label>
+                                    <label htmlFor="password" className="form-label">Contraseña*</label>
                                     <input
                                         type="password"
-                                        className="form-control bg-dark text-white border-0"
+                                        className="my-form-control w-100"
                                         id="password"
                                         name="password"
-                                        placeholder="Contraseña"
+                                        value={formData1.password}
+                                        onChange={handleChange1}
                                         required
-                                    value = {formData1.password}
-                                    onChange={handleChange1}
                                     />
                                 </div>
-                                <button type="submit" className="btn btn-primary w-100 mt-4">
-                                    Iniciar sesión
-                                </button>
+                                <button type="submit" className="btn btn-primary w-100 mt-4">Iniciar sesión</button>
                                 <button
                                     className="btn btn-primary w-100 mb-3 mt-4"
                                     onClick={() => setIsRegister(true)}

@@ -8,9 +8,9 @@ import { CartItem } from "./shopping-cart-item.jsx"
 
 export const Navbar = () => {
   const { store, actions } = useContext(Context)
-
   const [isTransparent, setIsTransparent] = useState(false);
   let lastScrollTop = 0;
+  const [isCartOpen, setIsCartOpen] = useState(false);
 
   const handleScroll = () => {
     const currentScroll = window.scrollY;
@@ -27,13 +27,28 @@ export const Navbar = () => {
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
     actions.userShoppingCart()
-    actions.setShowLoginModal(false); 
 
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
+  useEffect(() => {
+    if (store.shoppingCart.length > 0 || store.localShoppingCart.length > 0) {
+      const offcanvasElement = document.getElementById("offcanvasShopping");
+      if (offcanvasElement) {
+        let offcanvasInstance = bootstrap.Offcanvas.getInstance(offcanvasElement);
+
+        if (!offcanvasInstance) {
+          offcanvasInstance = new bootstrap.Offcanvas(offcanvasElement);
+        }
+
+        if (!offcanvasElement.classList.contains("show")) {
+          offcanvasInstance.show();
+        }
+      }
+    }
+  }, [store.shoppingCart, store.localShoppingCart]);
 
   const navigate = useNavigate();
 
@@ -47,7 +62,7 @@ export const Navbar = () => {
 
   console.log("Usuario:", store.user ? store.user.userName : "Usuario no definido");
   console.log(store);
-  console.log("ShoppingCart------->",store.shoppingCart)
+  console.log("ShoppingCart------->", store.shoppingCart)
   return (
     <>
       {/* Offcanvas del menú */}
@@ -129,24 +144,40 @@ export const Navbar = () => {
         <button type="button" className="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
 
         <div className="offcanvas-body">
-          {store.shoppingCart?.map((item) => (
-            <CartItem
-              key={item.id}
-              img={item.img}
-              name={item.name}
-              seller_id={item.seller_id}
-              price={item.price}
-              id={item.id}
-            />
-          ))}
+          {store.user ? (
+            store.shoppingCart?.map((item) => (
+              <CartItem
+                key={item.id}
+                img={item.img}
+                name={item.name}
+                seller_id={item.seller_id}
+                price={item.price}
+                id={item.id}
+              />
+            ))
+          ) : (
+            store.localShoppingCart?.map((item) => (
+              <CartItem
+                key={item.product_id}
+                img={item.img}
+                name={item.name}
+                seller_id={item.seller_id}
+                price={item.price}
+                id={item.product_id}
+              />
+            ))
+          )}
+
           <div className="divider"></div>
-    <div className="text-center">
+          <div className="text-center">
             <div className="total text-center">
-            {store.shoppingCart?.reduce((total, item) => total + item.price, 0).toFixed(2)}€
-          </div>
-          
-          <Link to="/checkout" className="shopping-bar-button mt-5">Hacer pedido</Link>
-          <div className="divider"></div></div>
+              {store.user ?
+                (store.shoppingCart?.reduce((total, item) => total + item.price, 0).toFixed(2) + "€") :
+                (store.localShoppingCart?.reduce((total, item) => total + item.price, 0).toFixed(2) + "€")}
+            </div>
+
+            <Link to="/checkout" className="shopping-bar-button mt-5">Hacer pedido</Link>
+            <div className="divider"></div></div>
         </div>
       </div>
       {/* Navbar principal */}
@@ -179,13 +210,13 @@ export const Navbar = () => {
             </button>
             {/* Ícono de la bolsa de compras, se oculta en pantallas grandes */}
             <div>
-            <span
-              className={store.Token ? "fa-solid fa-bag-shopping small-device float" : "oculto"}
-              alt="Shopping bag"
-              data-bs-toggle="offcanvas"
-              data-bs-target="#offcanvasShopping"
-              aria-controls="offcanvasShopping"
-            ></span>
+              <span
+                className={"fa-solid fa-bag-shopping small-device float"}
+                alt="Shopping bag"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasShopping"
+                aria-controls="offcanvasShopping"
+              ></span>
             </div>
           </div>
           <div className="collapse navbar-collapse me-4" id="navbarSupportedContent">
@@ -249,7 +280,7 @@ export const Navbar = () => {
                 </li>
                 <li className="nav-item nav-link float" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
                   {/* Ícono de la bolsa de compras pantallas grandes, tambien abre el offcanvas */}
-                  <span className={store.Token ? "fa-solid fa-bag-shopping nav-shopping-bag float" : "oculto"}
+                  <span className={"fa-solid fa-bag-shopping nav-shopping-bag float"}
                     alt="Shopping bag"
                     data-bs-toggle="offcanvas"
                     data-bs-target="#offcanvasShopping"
