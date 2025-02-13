@@ -4,6 +4,8 @@ import "../../styles/sellview.css";
 import { useNavigate } from "react-router-dom";
 import { PhotoUpload } from "../component/photoupload.jsx";
 import { LoginModal } from "../component/login-modal.jsx";
+import { PremiumModal } from "../component/premium-modal.jsx";
+
 
 //import { LoginModal } from "../component/login-modal.jsx";
 
@@ -12,6 +14,8 @@ export const SellView = () => {
     const [typeOptions, setTypeOptions] = useState([]);
     const navigate = useNavigate();
     const [uploadedPhoto, setUploadedPhoto] = useState("");
+    const [showSuccess, setShowSuccess] = useState(false);
+
 
     const [formData, setFormData] = useState({
         name: "",
@@ -33,9 +37,11 @@ export const SellView = () => {
     const updateTypeOptions = (category) => {
         setFormData({ ...formData, category, type: "" });
         setTypeOptions(
-            category === "consolas" ? ["Sobremesa", "Portátil", "Híbrida"] :
-                category === "videojuegos" ? ["Acción", "Aventura", "Rol", "Estrategia", "Deportes", "Peleas", "Plataformas", "Terror", "Indie"] :
-                    category === "accesorios" ? ["Accesorios"] : []
+            category === "consolas" 
+                ? ["Sobremesa", "Portátil", "Híbrida"] 
+                : category === "videojuegos" 
+                ? ["Acción", "Aventura", "Rol", "Estrategia", "Deportes", "Peleas", "Plataformas", "Terror", "Indie"] 
+                : category === "accesorios" ? ["Accesorios"] : []
         );
     };
 
@@ -71,7 +77,7 @@ export const SellView = () => {
         if (!validateForm()) return;
 
         try {
-            await actions.sellProduct(formData, navigate);
+            await actions.sellProduct(formData, navigate, setShowSuccess);
             navigate("/");
         } catch (error) {
             console.error("Error al subir el producto:", error);
@@ -88,6 +94,7 @@ export const SellView = () => {
 
         <div className="__sell_container__">
             {store.showLoginModal && <LoginModal />}
+            {showSuccess && <PremiumModal />}
             <section className="text-center mb-4">
                 <h1 className="title">¡Empieza a vender!</h1>
                 <p className="subtitle">Fácil y rápido, con total seguridad. Garantía Final Boss.</p>

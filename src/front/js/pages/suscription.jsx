@@ -22,21 +22,21 @@ export const Suscription = () => {
         <div className="body-suscription">
                 <h2><strong>Conviértete en Premium Boss</strong></h2>
                 <h3 className="h3-suscription">Únete a nuestra comunidad y disfruta de las mejores ventajas.</h3>
-            <div className="card-container">
+            <div className="card-container row">
 
-                <div className="card basic">
+                <div className="card basic ">
                     <div className="circle-icon">
                         <img
-                            src="https://res.cloudinary.com/dr0wlij0c/image/upload/v1736453861/web-illustrations/user.png"
+                            src="https://res.cloudinary.com/dshjlidcs/image/upload/v1738526759/j8e22hpsiepivnue4rby-min_dbfghd.png"
                             alt="Basic subscription user illustration"
                         />
                     </div>
-                    <ul className="text">
-                        <li className="bulleted-list d-flex flex-start">• Descuentos estándares</li>
-                        <li className="bulleted-list d-flex flex-start">• Tarifas de envío regulares</li>
-                        <li className="bulleted-list d-flex flex-start">• Visibilidad limitada de tus productos</li>
-                        <li className="bulleted-list d-flex flex-start">• Acceso a contenido general</li>
-                        <li className="bulleted-list d-flex flex-start">• Soporte y asistencia estándar</li>
+                    <ul className="text text-start px-3">
+                        <li><i class="fa-regular icon-suscription fa-circle"></i> Descuentos estándares</li>
+                        <li><i class="fa-regular icon-suscription fa-circle"></i> Tarifas de envío regulares</li>
+                        <li><i class="fa-regular icon-suscription fa-circle"></i> Visibilidad limitada de tus productos</li>
+                        <li><i class="fa-regular icon-suscription fa-circle"></i> Acceso a contenido general</li>
+                        <li><i class="fa-regular icon-suscription fa-circle"></i> Soporte y asistencia estándar</li>
                     </ul>
                  
                 </div>
@@ -45,24 +45,24 @@ export const Suscription = () => {
                     
                     <div className="circle-icon">
                         <img
-                            src="https://res.cloudinary.com/dr0wlij0c/image/upload/v1736453861/web-illustrations/premium-user.png"
+                            src="https://res.cloudinary.com/dshjlidcs/image/upload/v1738526760/t9wliafde7eongd3umez-min_usjcnx.png"
                             alt="Premium subscription user illustration"
                         />
                     </div>
-                    <img className="img-fluid"
-                    src="https://res.cloudinary.com/dr0wlij0c/image/upload/v1737132420/Manual-Final-Boss-26_efcv6i.png"
+                    <img className="premium-img"
+                    src="https://res.cloudinary.com/dshjlidcs/image/upload/v1738527220/web-img/n0mqeqtviwcpjyhqkyen.png"
                     alt="premium boss"/>
-                    <ul className="text">
-                        <li className="bulleted-list d-flex flex-start">• Descuentos exclusivos</li>
-                        <li className="bulleted-list d-flex flex-start">• Envíos gratuitos</li>
-                        <li className="bulleted-list d-flex flex-start">• Mejora de la visibilidad de tus productos</li>
-                        <li className="bulleted-list d-flex flex-start">• Acceso anticipado a contenido exclusivo</li>
-                        <li className="bulleted-list d-flex flex-start">• Soporte mejorado incluyendo servicio 24 horas al día, 7 días a la semana</li>
+                    <ul className="text text-start px-lg-3">
+                        <li><i class="fa-regular icon-suscription-2 fa-star"></i> Descuentos exclusivos</li>
+                        <li><i class="fa-regular icon-suscription-2 fa-star"></i> Envíos gratuitos</li>
+                        <li><i class="fa-regular icon-suscription-2 fa-star"></i> Mejora de la visibilidad de tus productos</li>
+                        <li><i class="fa-regular icon-suscription-2 fa-star"></i> Acceso anticipado a contenido exclusivo</li>
+                        <li><i class="fa-regular icon-suscription-2 fa-star"></i> Soporte mejorado incluyendo servicio 24 horas al día, 7 días a la semana</li>
                     </ul>
                     <div className="container">
                     <p><strong className="price">9.99€</strong><span>/mes</span></p>
                     <Link
-                     className="join-btn" 
+                     className="faq-home-button" 
                      to="/checkout"
                      onClick={handleSubscriptionClick}
                     >

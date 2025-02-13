@@ -17,7 +17,7 @@ export const Checkout = () => {
     ) || 0;
 
     const subscriptionPrice = selectedSubscription ? 9.99 : 0;
-    const shippingPrice = (store.user?.subscription || isSubscriptionOnly) ? 0: 7;
+    const shippingPrice = (store.user?.subscription || selectedSubscription) ? 0: 7;
     return cartTotal + subscriptionPrice + shippingPrice;
   };
 
@@ -60,13 +60,14 @@ export const Checkout = () => {
         {store.user && (
           <div>
             <img
-              src={store.user.avatar || '/default-avatar.png'}
+              src={store.user.avatar}
+              className="img-fluid-checkout"
               alt="User avatar"
             />
-            <div>
+            <div className="user-details-checkout">
               <p>{store.user.userName}</p>
               <p>{store.user.email}</p>
-              <p>Estado: {store.user.subscription ? 'Premium' : 'Basic'}</p>
+              <p>Estado: {store.user.subscription ? 'Premium' : 'Basico'}</p>
             </div>
           </div>
         )}
@@ -81,7 +82,7 @@ export const Checkout = () => {
             data-bs-target="#flush-collapseOne"
             aria-expanded="false"
             aria-controls="flush-collapseOne">
-            <h4>Direccion de envio</h4>
+            <h4>Dirección de envio</h4>
           </button>
         </h2>
         <div id="flush-collapseOne" className="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
@@ -146,7 +147,7 @@ export const Checkout = () => {
 
         {/* subscription part end */}
 
-        {!isSubscriptionOnly && (
+        {!isSubscriptionOnly && !selectedSubscription && (
           store.user?.subscription ? (
             <p className="shipping-fee">
               <span className="text-decoration-line-through text-dark">Gastos de envio: 7.00€</span>
@@ -157,15 +158,17 @@ export const Checkout = () => {
           )
         )}
 
-        <h3 className="total">Total: {calculateTotalPrice().toFixed(2)}€</h3>
+        <h3 className="total ">Total: {calculateTotalPrice().toFixed(2)}€</h3>
       </div>
 
-      <div className="container mt-4">
-        <h1>Por favor, introduzca los datos de su tarjeta</h1>
+      <div className="mt-4">
+        <h4>Por favor, introduzca los datos de su tarjeta</h4>
         <Elements stripe={stripePromise}>
           <CheckoutForm totalAmount={calculateTotalPrice()} />
         </Elements>
       </div>
+      <div className="divider"></div>
+      <div className="divider"></div>
     </div>
   );
 };

@@ -4,7 +4,7 @@
         
 {
     "name": "Nintendo Entertainment System (NES)",
-    "img": "https://res.cloudinary.com/dr0wlij0c/image/upload/v1735213847/NES-Console-Set_z672gh.png",
+    "img": "https://res.cloudinary.com/dshjlidcs/image/upload/v1738528372/NES-Console-Set_z672gh-min_ks47w4.png",
     "year": "1983",
     "brand": "Nintendo",
     "platform": "Nintendo",
@@ -18,7 +18,7 @@
 },
 {
     "name": "Sega Master System",
-    "img": "https://res.cloudinary.com/dr0wlij0c/image/upload/v1737133201/segamaster-sistem_zpjjlc.jpg",
+    "img": "https://res.cloudinary.com/dshjlidcs/image/upload/v1738528369/segamaster-sistem_zpjjlc-min_owwqp4.jpg",
     "year": "1985",
     "brand": "Sega",
     "platform": "Sega Master System",
@@ -32,7 +32,7 @@
 },
 {
     "name": "Atari 7800",
-    "img": "https://res.cloudinary.com/dr0wlij0c/image/upload/v1735373918/1920px-Atari-7800-Console-Set_nqtvf5.jpg",
+    "img": "https://res.cloudinary.com/dshjlidcs/image/upload/v1738528369/1920px-Atari-7800-Console-Set_nqtvf5-min_ptdyho.jpg",
     "year": "1986",
     "brand": "Atari",
     "platform": "Atari Corporation",
@@ -46,7 +46,7 @@
 },
 {
     "name": "Game & Watch",
-    "img": "https://res.cloudinary.com/dr0wlij0c/image/upload/v1735373917/Game-and-watch-ball_veid2n.png",
+    "img": "https://res.cloudinary.com/dshjlidcs/image/upload/v1738528565/Game-and-watch-ball_veid2n-min_zvywkx.png",
     "year": "1980",
     "brand": "Nintendo",
     "platform": "Game & Watch",
@@ -60,7 +60,7 @@
 },
 {
     "name": "Super Nintendo Entertainment System (SNES)",
-    "img": "https://res.cloudinary.com/dr0wlij0c/image/upload/v1735373915/SNES-Mod1-Console-Set_upozmm.jpg",
+    "img": "https://res.cloudinary.com/dshjlidcs/image/upload/v1738528369/SNES-Mod1-Console-Set_upozmm-min_a8xdub.jpg",
     "year": "1990",
     "brand": "Nintendo",
     "platform": "Nintendo",
@@ -74,7 +74,7 @@
 },
 {
     "name": "PlayStation (PS1)",
-    "img": "https://res.cloudinary.com/dr0wlij0c/image/upload/v1735374080/PlayStation-SCPH-1000-with-Controller_eolbsi.jpg",
+    "img": "https://res.cloudinary.com/dshjlidcs/image/upload/v1738528368/PlayStation-SCPH-1000-with-Controller_eolbsi-min_pdpvbk.jpg",
     "year": "1994",
     "brand": "Sony",
     "platform": "PlayStation",
@@ -88,7 +88,7 @@
 },
 {
     "name": "Nintendo 64",
-    "img": "https://res.cloudinary.com/dr0wlij0c/image/upload/v1735374172/1920px-Nintendo-64-wController-L_fbcwaa.jpg",
+    "img": "https://res.cloudinary.com/dshjlidcs/image/upload/v1738528372/1920px-Nintendo-64-wController-L_fbcwaa-min_rpc91j.jpg",
     "year": "1996",
     "brand": "Nintendo",
     "platform": "Nintendo",
@@ -102,7 +102,7 @@
 },
 {
     "name": "Game Boy",
-    "img": "https://res.cloudinary.com/dr0wlij0c/image/upload/v1735374455/Game-Boy-FL_osmddu.png",
+    "img": "https://res.cloudinary.com/dshjlidcs/image/upload/v1738528372/1920px-Nintendo-64-wController-L_fbcwaa-min_rpc91j.jpg",
     "year": "1989",
     "brand": "Nintendo",
     "platform": "Nintendo",
@@ -116,7 +116,7 @@
 },
 {
     "name": "Sega Saturn",
-    "img": "https://res.cloudinary.com/dr0wlij0c/image/upload/v1735374550/Sega-Saturn-Console-Set-Mk2_je8f1k.png",
+    "img": "https://res.cloudinary.com/dshjlidcs/image/upload/v1738528369/Sega-Saturn-Console-Set-Mk2_je8f1k-min_llzsbr.png",
     "year": "1994",
     "brand": "Sega",
     "platform": "Sega",
@@ -130,7 +130,7 @@
 },
 {
     "name": "PlayStation 2",
-    "img": "https://res.cloudinary.com/dr0wlij0c/image/upload/v1735397962/PS2-Versions_zzhjnh.jpg",
+    "img": "https://res.cloudinary.com/dshjlidcs/image/upload/v1738528368/PS2-Versions_zzhjnh-min_nufx4o.jpg",
     "year": "2000",
     "brand": "Sony",
     "platform": "PlayStation 2",
@@ -144,7 +144,7 @@
 },
 {
     "name": "Nintendo GameCube",
-    "img": "https://res.cloudinary.com/dr0wlij0c/image/upload/v1735397962/GameCube-Set_vokzkr.jpg",
+    "img": "https://res.cloudinary.com/dshjlidcs/image/upload/v1738528372/GameCube-Set_vokzkr-min_zu98ho.jpg",
     "year": "2001",
     "brand": "Nintendo",
     "platform": "Nintendo GameCube",
@@ -158,7 +158,7 @@
 },
 {
     "name": "Game Boy Advance",
-    "img": "https://res.cloudinary.com/dr0wlij0c/image/upload/v1735397962/Nintendo-Game-Boy-Advance-Purple-FL_yfp2ph.jpg",
+    "img": "https://res.cloudinary.com/dshjlidcs/image/upload/v1738528367/Nintendo-Game-Boy-Advance-Purple-FL_yfp2ph-min_hs1ip1.jpg",
     "year": "2001",
     "brand": "Nintendo",
     "platform": "Nintendo",
@@ -172,7 +172,7 @@
 },
 {
     "name": "Nintendo DS",
-    "img": "https://res.cloudinary.com/dr0wlij0c/image/upload/v1735397962/Nintendo-DS-Fat-Blue_b9dl11.jpg",
+    "img": "https://res.cloudinary.com/dshjlidcs/image/upload/v1738528368/Nintendo-DS-Fat-Blue_b9dl11-min_uqvgad.jpg",
     "year": "2004",
     "brand": "Nintendo",
     "category":"consolas",
@@ -186,7 +186,7 @@
   },
   {
     "name": "PlayStation Portable (PSP)",
-    "img": "https://res.cloudinary.com/dr0wlij0c/image/upload/v1735397967/Sony-PSP-1000-Body_b66nxd.png",
+    "img": "https://res.cloudinary.com/dshjlidcs/image/upload/v1738528369/Sony-PSP-1000-Body_b66nxd-min_dibzyl.png",
     "year": "2004",
     "brand": "Sony",
     "category":"consolas",
@@ -200,7 +200,7 @@
   },
   {
     "name": "Xbox 360",
-    "img": "https://res.cloudinary.com/dr0wlij0c/image/upload/v1735397966/Xbox-360-Pro-wController_mgdupa.jpg",
+    "img": "https://res.cloudinary.com/dshjlidcs/image/upload/v1738528370/Xbox-360-Pro-wController_mgdupa-min_lluue2.jpg",
     "year": "2005",
     "brand": "Microsoft",
     "category":"consolas",
@@ -215,7 +215,7 @@
   },
   {
     "name": "PlayStation 3",
-    "img": "https://res.cloudinary.com/dr0wlij0c/image/upload/v1735397963/PS3-slim-console_mevjhi.png",
+    "img": "https://res.cloudinary.com/dshjlidcs/image/upload/v1738528368/PS3-slim-console_mevjhi-min_dpieo2.png",
     "year": "2006",
     "brand": "Sony",
     "category":"consolas",
@@ -229,7 +229,7 @@
   },
   {
     "name": "Nintendo Wii",
-    "img": "https://res.cloudinary.com/dr0wlij0c/image/upload/v1735397960/1200px-Wii-console_kttpqx.jpg",
+    "img": "https://res.cloudinary.com/dshjlidcs/image/upload/v1738528369/1200px-Wii-console_kttpqx-min_uh1jat.jpg",
     "year": "2006",
     "brand": "Nintendo",
     "category":"consolas",
@@ -243,7 +243,7 @@
   },
   {
     "name": "PlayStation VR",
-    "img": "https://res.cloudinary.com/dr0wlij0c/image/upload/v1735397960/2560px-Sony-PlayStation-4-PSVR-Headset-Mk1-FL_ra7x66.jpg",
+    "img": "https://res.cloudinary.com/dshjlidcs/image/upload/v1738528372/Playstation_VR2-min_o7uyc4.jpg",
     "year": "2016",
     "brand": "Sony",
     "category":"consolas",
@@ -257,7 +257,7 @@
   },
   {
     "name": "Oculus Rift",
-    "img": "https://res.cloudinary.com/dr0wlij0c/image/upload/v1735386967/Oculus-Rift-CV1-Headset-Front_with_transparent_background_z4yjjv.png",
+    "img": "https://res.cloudinary.com/dshjlidcs/image/upload/v1738528374/Oculus-Rift-CV1-Headset-Front_with_transparent_background_z4yjjv-min_tutz0b.png",
     "year": "2016",
     "brand": "Meta Platforms",
     "category":"consolas",
@@ -271,7 +271,7 @@
   },
   {
     "name": "Playstation 4",
-    "img": "https://res.cloudinary.com/dr0wlij0c/image/upload/v1735387364/PS4-Console-wDS4_vpu1mn.jpg",
+    "img": "https://res.cloudinary.com/dshjlidcs/image/upload/v1738528368/PS4-Console-wDS4_vpu1mn-min_jmm8yh.jpg",
     "year": "2013",
     "brand": "Sony",
     "category":"consolas",
@@ -285,7 +285,7 @@
   },
   {
     "name": "Xbox One",
-    "img": "https://res.cloudinary.com/dr0wlij0c/image/upload/v1735387630/2880px-Microsoft-Xbox-One-S-Console-FL_llmazk.jpg",
+    "img": "https://res.cloudinary.com/dshjlidcs/image/upload/v1738528372/2880px-Microsoft-Xbox-One-S-Console-FL_llmazk-min_cdhizu.jpg",
     "year": "2013",
     "brand": "Microsoft",
     "category":"consolas",
@@ -299,7 +299,7 @@
   },
   {
     "name": "Nintendo Switch",
-    "img": "https://res.cloudinary.com/dr0wlij0c/image/upload/v1735388108/Nintendo-Switch-Console-Docked-wJoyConRB_lyfkw1.jpg",
+    "img": "https://res.cloudinary.com/dshjlidcs/image/upload/v1738528372/Nintendo-Switch-Console-Docked-wJoyConRB_lyfkw1-min_kl40g5.jpg",
     "year": "2017",
     "brand": "Nintendo",
     "category":"consolas",
@@ -313,7 +313,7 @@
   },
   {
     "name": "Nintendo 3DS",
-    "img": "https://res.cloudinary.com/dr0wlij0c/image/upload/v1735388278/Nintendo-3DS-AquaOpen_vib6fh.png",
+    "img": "https://res.cloudinary.com/dshjlidcs/image/upload/v1738528372/Nintendo-3DS-AquaOpen_vib6fh-min_uxyt6a.png",
     "year": "2011",
     "brand": "Nintendo",
     "category":"consolas",
@@ -327,7 +327,7 @@
   },
   {
     "name": "Wii U",
-    "img": "https://res.cloudinary.com/dr0wlij0c/image/upload/v1735388474/Wii_U_Console_and_Gamepad_muqqhh.png",
+    "img": "https://res.cloudinary.com/dshjlidcs/image/upload/v1738528369/Wii_U_Console_and_Gamepad_muqqhh-min_qkdma3.png",
     "year": "2012",
     "brand": "Nintendo",
     "platform": "Nintendo Wii U",
@@ -341,7 +341,7 @@
   },
   {
     "name": "Playstation VR2",
-    "img": "https://res.cloudinary.com/dr0wlij0c/image/upload/v1735388663/61x0Ej1el7L._AC_SX679__zruqse.jpg",
+    "img": "https://res.cloudinary.com/dshjlidcs/image/upload/v1738528372/Playstation_VR2-min_o7uyc4.jpg",
     "year": "2023",
     "brand": "Sony",
     "platform": "PlayStation VR2",
@@ -355,7 +355,7 @@
   },
   {
     "name": "Meta Quest 3",
-    "img": "https://res.cloudinary.com/dr0wlij0c/image/upload/v1735388940/Meta_Quest_3_zffyfq.webp",
+    "img": "https://res.cloudinary.com/dshjlidcs/image/upload/v1738528369/alquiler-meta-quest-3-min_mjesvo.jpg",
     "year": "2023",
     "brand": "Meta",
     "platform": "Meta Quest 3",
@@ -369,7 +369,7 @@
   },
   {
     "name": "PlayStation 5 Pro",
-    "img": "https://res.cloudinary.com/dr0wlij0c/image/upload/v1735389803/Sony-playstation-5-pro_xz9d9p.webp",
+    "img": "https://res.cloudinary.com/dshjlidcs/image/upload/v1738528369/ps5-min_jeed44.png",
     "year": "2024",
     "brand": "Sony",
     "platform": "PlatStation 5 Pro",
@@ -383,7 +383,7 @@
   },
   {
     "name": "Xbox Series X",
-    "img": "https://res.cloudinary.com/dr0wlij0c/image/upload/v1735390072/Xbox_Series_X_cixsah.webp",
+    "img": "https://res.cloudinary.com/dshjlidcs/image/upload/v1738528371/consola-xbox-series-x-digital-edition-1tb-min_dclzwr.jpg",
     "year": "2020",
     "brand": "Microsoft",
     "platform": "Xbox Series X",
@@ -397,7 +397,7 @@
   },
   {
     "name": "Steam Deck",
-    "img": "https://res.cloudinary.com/dr0wlij0c/image/upload/v1735416552/fbhgvqhogjtaych7ioth.webp",
+    "img": "https://res.cloudinary.com/dshjlidcs/image/upload/v1738528370/Steam-Deck-OLED-blanco-001_l-min_mhxvfy.jpg",
     "year": "2022",
     "brand": "Valve",
     "platform": "Steam Deck",
@@ -411,7 +411,7 @@
   },
   {
     "name": "Nintendo Switch OLED",
-    "img": "https://res.cloudinary.com/dr0wlij0c/image/upload/v1735416637/2880px-Nintendo-Switch-wJoyCons-BlRd-Standing-FL_fkkske.png",
+    "img": "https://res.cloudinary.com/dshjlidcs/image/upload/v1738531388/HEG-S-KABAA_Switch_OLED_7__azul-rojo_Joy-Con_64_GB_mhbjud.jpg",
     "year": "2021",
     "brand": "Nintendo",
     "platform": "Nintendo Switch",
@@ -425,7 +425,7 @@
   },
   {
     "name": "Pico 4",
-    "img": "https://res.cloudinary.com/dr0wlij0c/image/upload/v1735416699/SrqDodC-1TIZPacPGhFbFIRoHEQ5qCmpjqVq7oxrAjXtM4jS3AxtJqKoo0REv-kteAl2GEDyBGaVYlwrSnj2eA_urnyjo.webp",
+    "img": "https://res.cloudinary.com/dshjlidcs/image/upload/v1738531388/HEG-S-KABAA_Switch_OLED_7__azul-rojo_Joy-Con_64_GB_mhbjud.jpg",
     "year": "2022",
     "brand": "Pico Interactive",
     "platform": "Pico 4",
@@ -439,7 +439,7 @@
   },
   {
     "name": "ROG Ally",
-    "img": "https://res.cloudinary.com/dr0wlij0c/image/upload/v1735416699/asus-rog-ally-analisis-precio_whlz2s.webp",
+    "img": "https://res.cloudinary.com/dshjlidcs/image/upload/v1738528371/71SzrV6I5-L-min_ys2atq.jpg",
     "year": "2023",
     "brand": "ASUS",
     "platform": "ROG Ally",
@@ -458,7 +458,7 @@
 "videogames":[ 
   {
     "name": "Metal Gear Solid",
-    "img": "https://res.cloudinary.com/dr0wlij0c/image/upload/v1735416763/Metal_Gear_Solid_cover_art_ieem5w.png",
+    "img": "https://res.cloudinary.com/dshjlidcs/image/upload/v1738529839/Metal_Gear_Solid_cover_art_ieem5w-min_bbyyyn.png",
     "year": "1998",
     "brand": "Konami",
     "platform": "PlayStation",
@@ -472,7 +472,7 @@
   },
   {
     "name": "Grand Theft Auto: Vice City",
-    "img": "https://res.cloudinary.com/dr0wlij0c/image/upload/v1735416844/1200px-GTAViceCityBoxArtwork_c5gnxa.jpg",
+    "img": "https://res.cloudinary.com/dshjlidcs/image/upload/v1738529841/1200px-GTAViceCityBoxArtwork_c5gnxa-min_sqipw6.jpg",
     "year": "2002",
     "brand": "Rockstar Games",
     "platform": "PlayStation 2",
@@ -486,7 +486,7 @@
   },
   {
     "name": "God of War II",
-    "img": "https://res.cloudinary.com/dr0wlij0c/image/upload/v1735416841/God_of_War_II_cover_bbe38d.jpg",
+    "img": "https://res.cloudinary.com/dshjlidcs/image/upload/v1738529849/God_of_War_II_cover_bbe38d-min_x8stxc.jpg",
     "year": "2007",
     "brand": "Santa Monica Studio",
     "platform": "PlayStation 2",
@@ -500,7 +500,7 @@
   },
   {
     "name": "Uncharted 2: Among Thieves",
-    "img": "https://res.cloudinary.com/dr0wlij0c/image/upload/v1735416841/Among_Thieves_front_cover_29_mbslhb.webp",
+    "img": "https://res.cloudinary.com/dshjlidcs/image/upload/v1738529849/among_thieves-min_dsjvdh.jpg",
     "year": "2009",
     "brand": "Naughty Dog",
     "platform": "PlayStation 3",
@@ -514,7 +514,7 @@
   },
   {
     "name": "Dark Souls",
-    "img": "https://res.cloudinary.com/dr0wlij0c/image/upload/v1735416840/dark-souls-cover_niz5k0.webp",
+    "img": "https://res.cloudinary.com/dshjlidcs/image/upload/v1738529852/dark_souls-min_yfatdv.jpg",
     "year": "2011",
     "brand": "FromSoftware",
     "platform": "PlayStation 3",
@@ -528,7 +528,7 @@
   },
   {
     "name": "The Last of Us",
-    "img": "https://res.cloudinary.com/dr0wlij0c/image/upload/v1735416840/images_v9cec2.jpg",
+    "img": "https://res.cloudinary.com/dshjlidcs/image/upload/v1738529847/images_v9cec2-min_xsaufs.jpg",
     "year": "2013",
     "brand": "Naughty Dog",
     "platform": "PlayStation 3",
@@ -542,7 +542,7 @@
   },
   {
     "name": "Doom Eternal",
-    "img": "https://res.cloudinary.com/dr0wlij0c/image/upload/v1735375850/doom-eternal-box-image_okyq4z.jpg",
+    "img": "https://res.cloudinary.com/dshjlidcs/image/upload/v1738529843/doom-eternal-box-image_okyq4z-min_vozucc.jpg",
     "year": "2020",
     "brand": "Bethesda Softworks",
     "platform": "PC",
@@ -556,7 +556,7 @@
   },
   {
     "name": "The Legend of Zelda",
-    "img": "https://res.cloudinary.com/dr0wlij0c/image/upload/v1735376055/Legend_of_zelda_cover__with_cartridge__gold_axglwi.png",
+    "img": "https://res.cloudinary.com/dshjlidcs/image/upload/v1738529841/81U-DS7w_CL_wlrzxo-min_dhdfx8.jpg",
     "year": "1986",
     "brand": "Nintendo",
     "platform": "Nintendo",
@@ -570,7 +570,7 @@
   },
   {
     "name": "Monkey Island 2: LeChuck’s Revenge",
-    "img": "https://res.cloudinary.com/dr0wlij0c/image/upload/v1735376157/LeChuck_s_Revenge_artwork_drrdzz.jpg",
+    "img": "https://res.cloudinary.com/dshjlidcs/image/upload/v1738529848/LeChuck_s_Revenge_artwork_drrdzz-min_snjukt.jpg",
     "year": "1991",
     "brand": "LucasArts",
     "platform": "PC",
@@ -584,7 +584,7 @@
   },
   {
     "name": "Shadow of the Colossus",
-    "img": "https://res.cloudinary.com/dr0wlij0c/image/upload/v1735376230/4317156-shadow-of-the-colossus-playstation-2-front-cover_gfq11c.jpg",
+    "img": "https://res.cloudinary.com/dshjlidcs/image/upload/v1738529841/4317156-shadow-of-the-colossus-playstation-2-front-cover_gfq11c-min_fkp69n.jpg",
     "year": "2005",
     "brand": "Sony Computer Entertainment",
     "platform": "PlayStation 2",
@@ -598,7 +598,7 @@
   },
   {
     "name": "Journey",
-    "img": "https://res.cloudinary.com/dr0wlij0c/image/upload/v1735376331/81kyHuFWLRL._SL1500__uumdzo.jpg",
+    "img": "https://res.cloudinary.com/dshjlidcs/image/upload/v1738529841/81kyHuFWLRL._SL1500__uumdzo-min_no50lh.jpg",
     "year": "2012",
     "brand": "Thatgamecompany",
     "platform": "PlayStation 3",
@@ -611,22 +611,50 @@
     "price": 15.00
   },
   {
-    "name": "The Legend of Zelda: Breath of the Wild",
-    "img": "https://res.cloudinary.com/dr0wlij0c/image/upload/v1735376444/81U-DS7w_CL_wlrzxo.jpg",
-    "year": "2017",
+    "name": "The Legend of Zelda: Tears of the Kingdom",
+    "img": "https://res.cloudinary.com/dshjlidcs/image/upload/v1738531978/totkj_jijdff.jpg", 
+    "year": "2023",
     "brand": "Nintendo",
     "platform": "Nintendo Switch",
     "type": "Aventura",
-    "category":"videojuegos",
-    "description": "\nBreath of the Wild es un juego de aventura de mundo abierto que redefine la serie Zelda, ofreciendo una experiencia libre y expansiva donde los jugadores pueden explorar un vasto mundo lleno de secretos, enemigos y recursos.\n\nCaracterísticas\n- Mundo abierto con total libertad de exploración\n- Combate dinámico y resolución de acertijos\n- Gráficos y diseño de mundo excepcionales\n\nIdeal para\nJugadores que disfrutan de la exploración libre, los acertijos y una narrativa profunda en un mundo vibrante.",
+    "category": "videojuegos",
+    "description": "\nTears of the Kingdom es un juego de aventura de mundo abierto que lleva la experiencia de Zelda a nuevos niveles, con una narrativa épica, nuevas mecánicas de exploración y una gran expansión del mundo conocido de Hyrule.\n\nCaracterísticas\n- Mundo abierto con nuevas formas de exploración como el vuelo y la manipulación de objetos\n- Combate mejorado con habilidades y poderes únicos\n- Gráficos impresionantes y un mundo aún más detallado\n\nIdeal para\nJugadores que buscan una experiencia profunda, un mundo expansivo para explorar, y una historia emocionante llena de misterio y aventura.",
     "stock": 1,
     "state": true,
     "promoted": true,
-    "price": 49.50
-  },
+    "price": 59.50
+},
+{
+  "name": "Cult of the Lamb",
+  "img": "https://res.cloudinary.com/dshjlidcs/image/upload/v1738532217/878840117929_ey2g3u.jpg",
+  "year": "2022",
+  "brand": "Devolver Digital",
+  "platform": "Nintendo Switch",
+  "type": "Indie",
+  "category": "videojuegos",
+  "description": "\nCult of the Lamb es un juego de acción y gestión donde lideras un culto en un mundo oscuro y encantador. Explora mazmorras, recluta seguidores y construye tu comunidad mientras enfrentas amenazas místicas.\n\nCaracterísticas\n- Mezcla de acción roguelike y gestión de recursos\n- Estética única con un tono oscuro y adorable\n- Personalización de tu culto y decisiones estratégicas\n\nIdeal para\nJugadores que disfrutan de experiencias únicas, con un balance entre combate desafiante y construcción de comunidad.",
+  "stock": 1,
+  "state": true,
+  "promoted": true,
+  "price": 24.99
+},
+{
+  "name": "Hogwarts Legacy",
+  "img": "https://res.cloudinary.com/dshjlidcs/image/upload/v1738532218/714QOvdGrBL_isq92d.jpg",
+  "year": "2023",
+  "brand": "Warner Bros. Games",
+  "platform": "Nintendo Switch",
+  "type": "RPG, Aventura",
+  "category": "videojuegos",
+  "description": "\nHogwarts Legacy es un RPG de mundo abierto ambientado en el universo de Harry Potter. Vive tu propia aventura en el siglo XIX, explora Hogwarts y aprende magia mientras enfrentas misterios y criaturas mágicas.\n\nCaracterísticas\n- Mundo abierto con Hogwarts, Hogsmeade y más\n- Personalización de personaje y clases de magia\n- Historia original ambientada en el universo de Harry Potter\n\nIdeal para\nFans de Harry Potter y jugadores que buscan una experiencia inmersiva en un RPG mágico lleno de exploración y aventura.",
+  "stock": 1,
+  "state": true,
+  "promoted": true,
+  "price": 59.99
+},
   {
     "name": "Life is Strange",
-    "img": "https://res.cloudinary.com/dr0wlij0c/image/upload/v1735376515/life_is_strange-3561963_dujjqi.jpg",
+    "img": "https://res.cloudinary.com/dshjlidcs/image/upload/v1738529852/life_is_strange-3561963_dujjqi-min_ee48el.jpg",
     "year": "2015",
     "brand": "Dontnod Entertainment & Square Enix",
     "platform": "PC",
@@ -640,7 +668,7 @@
   },
   {
     "name": "Disco Elysium",
-    "img": "https://res.cloudinary.com/dr0wlij0c/image/upload/v1735376688/producto-disco-elysium-ps4-1145_xonio4.jpg",
+    "img": "https://res.cloudinary.com/dshjlidcs/image/upload/v1738529847/producto-disco-elysium-ps4-1145_xonio4-min_huttkq.jpg",
     "year": "2019",
     "brand": "ZA/UM",
     "platform": "PC",
@@ -654,7 +682,7 @@
   },
   {
     "name": "Metroid Prime Remastered",
-    "img": "https://res.cloudinary.com/dr0wlij0c/image/upload/v1735376760/71HNuRb_orL._AC_UF894_1000_QL80__oqoxxo.jpg",
+    "img": "https://res.cloudinary.com/dshjlidcs/image/upload/v1738529841/71HNuRb_orL._AC_UF894_1000_QL80__oqoxxo-min_ebeeo8.jpg",
     "year": "2023",
     "brand": "Nintendo",
     "platform": "Nintendo Switch",
@@ -668,7 +696,7 @@
   },
   {
     "name": "Final Fantasy VII Remake",
-    "img": "https://res.cloudinary.com/dr0wlij0c/image/upload/v1735376839/81J-uEoQ6WL._AC_UF894_1000_QL80__dbqacj.jpg",
+    "img": "https://res.cloudinary.com/dshjlidcs/image/upload/v1738532537/81W8CAno24L_vqulry.jpg",
     "year": "2019",
     "brand": "Square Enix",
     "platform": "PlayStation 5",
@@ -682,7 +710,7 @@
   },
   {
     "name": "Chrono Trigger",
-    "img": "https://res.cloudinary.com/dr0wlij0c/image/upload/v1735397961/chronotrigger-switch-1-768x1024_kb4krd.png",
+    "img": "https://res.cloudinary.com/dshjlidcs/image/upload/v1738529838/chronotrigger-switch-1-768x1024_kb4krd-min_f5ulah.png",
     "year": "1995",
     "brand": "Square Enix",
     "platform": "Nintendo Switch",
@@ -696,7 +724,7 @@
   },
   {
     "name": "Diablo III",
-    "img": "https://res.cloudinary.com/dr0wlij0c/image/upload/v1735397961/diablo_III_ktyrsc.jpg",
+    "img": "https://res.cloudinary.com/dshjlidcs/image/upload/v1738529838/diablo_III_ktyrsc-min_lgpsq9.jpg",
     "year": "2000",
     "brand": "Blizzard Entertainment",
     "platform": "PC",
@@ -710,7 +738,7 @@
   },
   {
     "name": "Mass Effect 2",
-    "img": "https://res.cloudinary.com/dr0wlij0c/image/upload/v1735397962/mass_effect_2_tutidm.jpg",
+    "img": "https://res.cloudinary.com/dshjlidcs/image/upload/v1738529852/mass_effect_2_tutidm-min_y6nycv.jpg",
     "year": "2010",
     "brand": "BioWare",
     "platform": "PlayStation 3",
@@ -724,7 +752,7 @@
   },
   {
     "name": "The Witcher 3: Wild Hunt",
-    "img": "https://res.cloudinary.com/dr0wlij0c/image/upload/v1735397966/the-witcher-3-wild-hunt-201551495951_1_kdwsj2.jpg",
+    "img": "https://res.cloudinary.com/dshjlidcs/image/upload/v1738529844/the-witcher-3-wild-hunt-201551495951_1_kdwsj2-min_brl0sq.jpg",
     "year": "2015",
     "brand": "CD Projekt Red",
     "platform": "PC",
@@ -738,7 +766,7 @@
   },
   {
     "name": "Persona 5 Royal",
-    "img": "https://res.cloudinary.com/dr0wlij0c/image/upload/v1735397962/personasroyal5_wx6re4.jpg",
+    "img": "https://res.cloudinary.com/dshjlidcs/image/upload/v1738529839/personasroyal5_wx6re4-min_oxkzos.jpg",
     "year": "2016",
     "brand": "Atlus",
     "platform": "PlayStation 4",
@@ -752,7 +780,7 @@
   }, 
   {
     "name": "Elden Ring",
-    "img": "https://res.cloudinary.com/dr0wlij0c/image/upload/v1735397961/elden-ring_ppzv2y.jpg",
+    "img": "https://res.cloudinary.com/dshjlidcs/image/upload/v1738529849/elden-ring_ppzv2y-min_nxxfwd.jpg",
     "year": "2022",
     "brand": "FromSoftware",
     "platform": "XBOX",
@@ -765,8 +793,8 @@
     "price": 60.00
   },
   {
-    "name": "Age of Empires II",
-    "img": "https://res.cloudinary.com/dr0wlij0c/image/upload/v1735397961/ageofempires_zycjst.jpg",
+    "name": "Age of Empires III",
+    "img": "https://res.cloudinary.com/dshjlidcs/image/upload/v1738529839/ageofempires_zycjst-min_sqose6.jpg",
     "year": "1999",
     "brand": "Ensemble Studios",
     "platform": "PC",
@@ -780,7 +808,7 @@
   },
   {
     "name": "StarCraft",
-    "img": "https://res.cloudinary.com/dr0wlij0c/image/upload/v1735397966/starcraft_dpcqkr.jpg",
+    "img": "https://res.cloudinary.com/dshjlidcs/image/upload/v1738529845/starcraft_dpcqkr-min_f8g1mb.jpg",
     "year": "1998",
     "brand": "Blizzard Entertainment",
     "platform": "PC",
@@ -794,7 +822,7 @@
   },
   {
     "name": "Civilization III",
-    "img": "https://res.cloudinary.com/dr0wlij0c/image/upload/v1735397960/civilizationII_wbsvu2.jpg",
+    "img": "https://res.cloudinary.com/dshjlidcs/image/upload/v1738529838/civilizationII_wbsvu2-min_zztxba.jpg",
     "year": "2001",
     "brand": "Firaxis Games",
     "platform": "PC",
@@ -808,10 +836,10 @@
   },
   {
     "name": "Crusader Kings III",
-    "img": "https://res.cloudinary.com/dr0wlij0c/image/upload/v1735390344/1833-crusaders-kings-iii-day-one-edition-ps5-review_axlevx.webp",
+    "img": "https://res.cloudinary.com/dshjlidcs/image/upload/v1738529852/crusanders_king-min_yxzkqi.jpg",
     "year": "2020",
     "brand": "Paradox Interactive",
-    "platform": "PlayStation 5",
+    "platform": "Xbox Series X",
     "type": "Estrategia",
     "category":"videojuegos",
     "description": "\nCrusader Kings III es un juego de gran estrategia donde los jugadores controlan una dinastía y toman decisiones políticas, militares y familiares a lo largo de generaciones. El juego destaca por su complejidad y profundidad en los aspectos de simulación de la nobleza medieval.\n\nCaracterísticas\n- Control total sobre dinastías y relaciones familiares\n- Profundización en las decisiones políticas y diplomáticas\n- Amplias opciones de personalización y estrategia\n\nIdeal para\nJugadores que buscan un desafío en la gestión de imperios y relaciones familiares en un contexto medieval.",
@@ -822,7 +850,7 @@
   },
   {
     "name": "Total War: Warhammer III",
-    "img": "https://res.cloudinary.com/dr0wlij0c/image/upload/v1735390544/TW_Warhammer3_t7kjio.jpg",
+    "img": "https://res.cloudinary.com/dshjlidcs/image/upload/v1738529849/TW_Warhammer3_t7kjio-min_daecqu.jpg",
     "year": "2022",
     "brand": "Sega",
     "platform": "PlayStation 5",
@@ -836,7 +864,7 @@
   },
   {
     "name": "FIFA ‘98",
-    "img": "https://res.cloudinary.com/dr0wlij0c/image/upload/v1735390637/Fifa98_stvpzb.webp",
+    "img": "https://res.cloudinary.com/dshjlidcs/image/upload/v1738529838/15053844395358-min_bdhxau.jpg",
     "year": "1997",
     "brand": "EA Sports",
     "platform": "PlayStation 1",
@@ -850,7 +878,7 @@
   },
   {
     "name": "Tony Hawk’s Pro Skater 2",
-    "img": "https://res.cloudinary.com/dr0wlij0c/image/upload/v1735390811/TH_PS_2_oim2pf.webp",
+    "img": "https://res.cloudinary.com/dshjlidcs/image/upload/v1738529837/R-26047441-1675973090-8635-min_fg5vke.jpg",
     "year": "2000",
     "brand": "Activision",
     "platform": "PlayStation 1",
@@ -864,7 +892,7 @@
   },
   {
     "name": "NBA Street",
-    "img": "https://res.cloudinary.com/dr0wlij0c/image/upload/v1735391507/NBA_Street_iao7q0.jpg",
+    "img": "https://res.cloudinary.com/dshjlidcs/image/upload/v1738529840/NBA_Street_iao7q0-min_s1d289.jpg",
     "year": "2001",
     "brand": "EA Sports BIG",
     "platform": "PlayStation 2",
@@ -878,7 +906,7 @@
   },
   {
     "name": "Gran Turismo 7",
-    "img": "https://res.cloudinary.com/dr0wlij0c/image/upload/v1735391573/PS5-Gran-Turismo-7-Hero-ES_pplaah.webp",
+    "img": "https://res.cloudinary.com/dshjlidcs/image/upload/v1738529852/PS5-Gran-Turismo-7-min_svogdp.jpg",
     "year": "2022",
     "brand": "Sony Interactive Entertainment",
     "platform": "PlayStation 5",
@@ -892,7 +920,7 @@
   },
   {
     "name": "Mario Kart 8",
-    "img": "https://res.cloudinary.com/dr0wlij0c/image/upload/v1735391737/Mario_Kart_8_f2feq9.jpg",
+    "img": "https://res.cloudinary.com/dshjlidcs/image/upload/v1738529852/Mario_Kart_8_f2feq9-min_xxgsme.jpg",
     "year": "2014",
     "brand": "Nintendo",
     "platform": "Nintendo Switch",
@@ -906,7 +934,7 @@
   },
   {
     "name": "Street Fighter 30TH Anniversary",
-    "img": "https://res.cloudinary.com/dr0wlij0c/image/upload/v1735391903/Street_Fighter_30th_anniversary_upo2a5.jpg",
+    "img": "https://res.cloudinary.com/dshjlidcs/image/upload/v1738533179/61LEMlRMEKL._AC_UF894_1000_QL80__1_j59yld.jpg",
     "year": "2018",
     "brand": "Capcom",
     "platform": "PlayStation 4",
@@ -920,7 +948,7 @@
   },
   {
     "name": "Mortal Kombat 1",
-    "img": "https://res.cloudinary.com/dr0wlij0c/image/upload/v1735391970/Mortal-kombat-1-standard-edition-ps5_tihtb7.webp",
+    "img": "https://res.cloudinary.com/dshjlidcs/image/upload/v1738529850/mc-min_fux4y9.jpg",
     "year": "2023",
     "brand": "Warner Bros.Games",
     "platform": "PlayStation 5",
@@ -934,7 +962,7 @@
   },
   {
     "name": "Tekken 3",
-    "img": "https://res.cloudinary.com/dr0wlij0c/image/upload/v1735392108/Tekken_3_qdvbup.webp",
+    "img": "https://res.cloudinary.com/dshjlidcs/image/upload/v1738529838/teken3-min_thks8c.jpg",
     "year": "1998",
     "brand": "Namco",
     "platform": "PlayStation 1",
@@ -948,7 +976,7 @@
   },
   {
     "name": "Soulcalibur II",
-    "img": "https://res.cloudinary.com/dr0wlij0c/image/upload/v1735417078/Soulcalibur_2_Game_Cube_eg0eam.webp",
+    "img": "https://res.cloudinary.com/dshjlidcs/image/upload/v1738529853/81732--soulcalibur-ii-min_va3ysp.png",
     "year": "2002",
     "brand": "Namco",
     "platform": "GameCube",
@@ -962,7 +990,7 @@
   },
   {
     "name": "Dragon Ball FighterZ",
-    "img": "https://res.cloudinary.com/dr0wlij0c/image/upload/v1735417076/DBFZ_cover_art_kqmthb.jpg",
+    "img": "https://res.cloudinary.com/dshjlidcs/image/upload/v1738529838/DBFZ_cover_art_kqmthb-min_n0bfs0.jpg",
     "year": "2018",
     "brand": "Arc System Works",
     "platform": "GameCube",
@@ -976,7 +1004,7 @@
   },
   {
     "name": "Super Smash Bros. Ultimate",
-    "img": "https://res.cloudinary.com/dr0wlij0c/image/upload/v1735417075/Super_Smash_Bros._Ultimate_peznet.jpg",
+    "img": "https://res.cloudinary.com/dshjlidcs/image/upload/v1738529844/Super_Smash_Bros._Ultimate_peznet-min_j7k4ja.jpg",
     "year": "2018",
     "brand": "Nintendo",
     "platform": "Nintendo Switch",
@@ -990,7 +1018,7 @@
   },
   {
     "name": "Super Mario Bros.",
-    "img": "https://res.cloudinary.com/dr0wlij0c/image/upload/v1735417075/Super_Mario_Bros._box_vdrzqu.png",
+    "img": "https://res.cloudinary.com/dshjlidcs/image/upload/v1738529843/Super_Mario_Bros._box_vdrzqu-min_mwbbuj.png",
     "year": "1985",
     "brand": "Nintendo",
     "platform": "NES",
@@ -1004,7 +1032,7 @@
   },
   {
     "name": "Sonic the Hedgehog",
-    "img": "https://res.cloudinary.com/dr0wlij0c/image/upload/v1735417075/Sonic_the_Hedgehog_1_Genesis_box_art_acuubo.jpg",
+    "img": "https://res.cloudinary.com/dshjlidcs/image/upload/v1738529846/Sonic_the_Hedgehog_1_Genesis_box_art_acuubo-min_s5erul.jpg",
     "year": "1991",
     "brand": "Sega",
     "platform": "Genesis",
@@ -1018,7 +1046,7 @@
   },
   {
     "name": "Donkey Kong Country",
-    "img": "https://res.cloudinary.com/dr0wlij0c/image/upload/v1735417072/Donkey_Kong_Country_SNES_cover_vxpade.png",
+    "img": "https://res.cloudinary.com/dshjlidcs/image/upload/v1738529838/Donkey_Kong_Country_SNES_cover_vxpade-min_bwjaa8.png",
     "year": "1994",
     "brand": "Rare",
     "platform": "SNES",
@@ -1032,7 +1060,7 @@
   },
   {
     "name": "Crash Bandicoot",
-    "img": "https://res.cloudinary.com/dr0wlij0c/image/upload/v1735417068/Crash_Bandicoot_Cover_ebenoh.png",
+    "img": "https://res.cloudinary.com/dshjlidcs/image/upload/v1738529838/Crash_Bandicoot_Cover_ebenoh-min_nsxf2k.png",
     "year": "1996",
     "brand": "Naughty Dog",
     "platform": "PlayStation",
@@ -1046,7 +1074,7 @@
   },
   {
     "name": "Spyro Trilogy",
-    "img": "https://res.cloudinary.com/dr0wlij0c/image/upload/v1735417067/Spyro_Reignited_Trilogy_yfizwo.png",
+    "img": "https://res.cloudinary.com/dshjlidcs/image/upload/v1738529844/Spyro_Reignited_Trilogy_yfizwo-min_a6udjf.png",
     "year": "1998",
     "brand": "Insomniac Games",
     "platform": "PlayStation",
@@ -1060,7 +1088,7 @@
   },
   {
     "name": "Hollow Knight",
-    "img": "https://res.cloudinary.com/dr0wlij0c/image/upload/v1735417067/Hollow_Knight_first_cover_art_rq3qnd.webp",
+    "img": "https://res.cloudinary.com/dshjlidcs/image/upload/v1738529849/hollow_knigh-min_qx2sbs.jpg",
     "year": "2017",
     "brand": "Team Cherry",
     "platform": "Nintendo Switch",
@@ -1074,7 +1102,7 @@
   },
   {
     "name": "Red Dead Redemption",
-    "img": "https://res.cloudinary.com/dr0wlij0c/image/upload/v1735417066/Red_Dead_Redemption_mpug31.jpg",
+    "img": "https://res.cloudinary.com/dshjlidcs/image/upload/v1738529847/Red_Dead_Redemption_mpug31-min_wnlohn.jpg",
     "year": "2010",
     "brand": "Rockstar Games",
     "platform": "PlayStation 3",
@@ -1088,7 +1116,7 @@
   },
   {
     "name": "Ori and the Blind Forest",
-    "img": "https://res.cloudinary.com/dr0wlij0c/image/upload/v1735376930/302601-ori-and-the-blind-forest-xbox-one-front-cover_lwpkdm.jpg",
+    "img": "https://res.cloudinary.com/dshjlidcs/image/upload/v1738529841/302601-ori-and-the-blind-forest-xbox-one-front-cover_lwpkdm-min_e3a5oc.jpg",
     "year": "2015",
     "brand": "Moon Studios & Microsoft Studios",
     "platform": "XBOX",
@@ -1102,7 +1130,7 @@
   },
   {
     "name": "Resident Evil",
-    "img": "https://res.cloudinary.com/dr0wlij0c/image/upload/v1735377023/91AF0_BXxbL._AC_UF894_1000_QL80__nb79sz.jpg",
+    "img": "https://res.cloudinary.com/dshjlidcs/image/upload/v1738529845/resident-evil.VIII_fkqnyo-min_m5lpqn.jpg",
     "year": "1996",
     "brand": "Capcom",
     "platform": "PlayStation 1",
@@ -1116,7 +1144,7 @@
   },
   {
     "name": "Silent Hill",
-    "img": "https://res.cloudinary.com/dr0wlij0c/image/upload/v1735377023/91AF0_BXxbL._AC_UF894_1000_QL80__nb79sz.jpg",
+    "img": "https://res.cloudinary.com/dshjlidcs/image/upload/v1738529846/Silent_Hill_video_game_cover_dluar8-min_csl95p.png",
     "year": "1999",
     "brand": "Konami",
     "platform": "PlayStation 1",
@@ -1130,7 +1158,7 @@
   },
   {
     "name": "Fatal Frame II",
-    "img": "https://res.cloudinary.com/dr0wlij0c/image/upload/v1735377196/Fatal_Frame_II_-_Crimson_Butterfly_xfzroh.jpg",
+    "img": "https://res.cloudinary.com/dshjlidcs/image/upload/v1738529849/Fatal_Frame_II_-_Crimson_Butterfly_xfzroh-min_mwlurq.jpg",
     "year": "2003",
     "brand": "Tecmo",
     "platform": "PlayStation 2",
@@ -1144,7 +1172,7 @@
   },
   {
     "name": "Amnesia: The Dark Descent",
-    "img": "https://res.cloudinary.com/dr0wlij0c/image/upload/v1735377267/Amnesia-The-Dark-Descent-Cover-Art_kcntd2.png",
+    "img": "https://res.cloudinary.com/dshjlidcs/image/upload/v1738529838/Amnesia-The-Dark-Descent-Cover-Art_kcntd2-min_yrvkuh.png",
     "year": "2010",
     "brand": "Frictional Games",
     "platform": "PC",
@@ -1158,7 +1186,7 @@
   },
   {
     "name": "Resident Evil 7: Biohazard",
-    "img": "https://res.cloudinary.com/dr0wlij0c/image/upload/v1735397966/resident-evil.VIII_fkqnyo.jpg",
+    "img": "https://res.cloudinary.com/dshjlidcs/image/upload/v1738529841/91AF0_BXxbL._AC_UF894_1000_QL80__nb79sz-min_vzojds.jpg",
     "year": "2017",
     "brand": "Biohazard - Capcom",
     "platform": "PlayStation 4",
@@ -1172,7 +1200,7 @@
   },
   {
     "name": "Dead Space Remake",
-    "img": "https://res.cloudinary.com/dr0wlij0c/image/upload/v1735397961/deadspace_t5mklj.jpg",
+    "img": "https://res.cloudinary.com/dshjlidcs/image/upload/v1738529838/deadspace_t5mklj-min_hm3msl.jpg",
     "year": "2023",
     "brand": "Motive Studio",
     "platform": "PC",
@@ -1186,7 +1214,7 @@
   },
   {
     "name": "Undertale",
-    "img": "https://res.cloudinary.com/dr0wlij0c/image/upload/v1735397966/undertale_ahffuo.jpg",
+    "img": "https://res.cloudinary.com/dshjlidcs/image/upload/v1738529847/undertale_ahffuo-min_dbsbtw.jpg",
     "year": "2015",
     "brand": "Toby Fox",
     "platform": "Nintendo Switch",
@@ -1199,22 +1227,8 @@
     "price": 10.00
   },
   {
-    "name": "Hollow Knight",
-    "img": "https://res.cloudinary.com/dr0wlij0c/image/upload/v1735397962/hollow-knight_esbxww.jpg",
-    "year": "2017",
-    "brand": "Team Cherry",
-    "platform": "Nintendo Switch",
-    "type": "Indie",
-    "category":"videojuegos",
-    "description": "\nHollow Knight es un juego de plataformas tipo Metroidvania que combina exploración profunda con un sistema de combate desafiante y fluido.\n\nCaracterísticas\n- Amplio mundo interconectado\n- Combates contra jefes épicos\n- Estilo artístico hermoso y oscuro\n\nIdeal para\nJugadores que disfrutan de la exploración y el combate en un mundo sombrío y desafiante.",
-    "stock": 1,
-    "state": false,
-    "promoted": false,
-    "price": 15.00
-  },
-  {
     "name": "Stardew Valley",
-    "img": "https://res.cloudinary.com/dr0wlij0c/image/upload/v1735397968/stardewvalley_cv9ogv.png",
+    "img": "https://res.cloudinary.com/dshjlidcs/image/upload/v1738529844/stardewvalley_cv9ogv-min_ljdrgc.png",
     "year": "2016",
     "brand": "ConcernedApe",
     "platform": "Nintendo Switch",
@@ -1228,7 +1242,7 @@
   },
   {
     "name": "Celeste",
-    "img": "https://res.cloudinary.com/dr0wlij0c/image/upload/v1735392337/Celeste_Switch_y1c7zp.jpg",
+    "img": "https://res.cloudinary.com/dshjlidcs/image/upload/v1738529838/Celeste_Switch_y1c7zp-min_rcoxeu.jpg",
     "year": "2018",
     "brand": "Maddy Makes Games",
     "platform": "Nintendo Switch",
@@ -1242,7 +1256,7 @@
   },
   {
     "name": "Hades",
-    "img": "https://res.cloudinary.com/dr0wlij0c/image/upload/v1735392590/Hades-ps5_700x_rxntje.webp",
+    "img": "https://res.cloudinary.com/dshjlidcs/image/upload/v1738529838/hades-min_grxm6u.jpg",
     "year": "2020",
     "brand": "Supergiant Games",
     "platform": "PlayStation 5",
@@ -1259,7 +1273,7 @@
 "accessory":[ 
   {
     "name": "Power Glove NES",
-    "img": "https://res.cloudinary.com/dr0wlij0c/image/upload/v1735392798/NES-Power-Glove_usrmzd.jpg",
+    "img": "https://res.cloudinary.com/dshjlidcs/image/upload/v1738530369/NES-Power-Glove_usrmzd_tmxdww.jpg",
     "year": 1989,
     "brand": "Mattel",
     "platform": "Nintendo Entertainment System",
@@ -1272,22 +1286,8 @@
     "price": 239.00
   },
   {
-    "name": "Control Pad con Joystick desmontable SMS",
-    "img": "https://res.cloudinary.com/dr0wlij0c/image/upload/v1735373920/Sega_Mark_III_oqtgud.jpg",
-    "year": "1985",
-    "brand": "Sega",
-    "platform": "Sega Master System",
-    "type": "Accesorio",
-    "category":"accesorios",
-    "description": "\nEl Control Pad con Joystick desmontable para el Master System ofrece una experiencia de juego versátil, permitiendo a los jugadores alternar entre un pad clásico y un joystick.\n\nCaracterísticas\n- Joystick desmontable para adaptarse a diferentes estilos de juego\n- Construcción duradera\n- Diseño ergonómico para largas sesiones de juego\n\nIdeal para\nFans de la Sega Master System que buscan mejorar su experiencia de control.",
-    "stock": 1,
-    "state": false,
-    "promoted": false,
-    "price": 39.99
-  },
-  {
     "name": "Expansion Module Atari 7800",
-    "img": "https://res.cloudinary.com/dr0wlij0c/image/upload/v1735393524/Expasion_Module_Atari_zw66wh.png",
+    "img": "https://res.cloudinary.com/dshjlidcs/image/upload/v1738530373/Expasion_Module_Atari_zw66wh_miaqih.png",
     "year": "1986",
     "brand": "Atari Corporation",
     "platform": "Atari 7800",
@@ -1301,7 +1301,7 @@
   },
   {
     "name": "Super Nintendo MultiTap",
-    "img": "https://res.cloudinary.com/dr0wlij0c/image/upload/v1735417305/Super_Nintendo_MultiTap_zr0myz.jpg",
+    "img": "https://res.cloudinary.com/dshjlidcs/image/upload/v1738530371/Super_Nintendo_MultiTap_zr0myz_pexyzv.jpg",
     "year": "1993",
     "brand": "Nintendo",
     "platform": "Super Nintendo Entertainment System",
@@ -1315,7 +1315,7 @@
   },
   {
     "name": "Joystick AES",
-    "img": "https://res.cloudinary.com/dr0wlij0c/image/upload/v1735417303/images_sxhpjr.jpg",
+    "img": "https://res.cloudinary.com/dshjlidcs/image/upload/v1738530370/images_sxhpjr_ctypyj.jpg",
     "year": "1990",
     "brand": "SNK",
     "platform": "Neo Geo",
@@ -1329,7 +1329,7 @@
   },
   {
     "name": "Memory Card",
-    "img": "https://res.cloudinary.com/dr0wlij0c/image/upload/v1735417303/1015px-PSX-Memory-Card_n9e6w7.jpg",
+    "img": "https://res.cloudinary.com/dshjlidcs/image/upload/v1738530375/1015px-PSX-Memory-Card_n9e6w7_qr6mkk.jpg",
     "year": "1994",
     "brand": "Sony",
     "platform": "PlayStation",
@@ -1343,7 +1343,7 @@
   },  
   {
     "name": "Transfer Pak",
-    "img": "https://res.cloudinary.com/dr0wlij0c/image/upload/v1735417303/Nintendo-64-GB-Transfer-Pak_dyciuw.jpg",
+    "img": "https://res.cloudinary.com/dshjlidcs/image/upload/v1738530369/Nintendo-64-GB-Transfer-Pak_dyciuw_ucczfo.jpg",
     "year": "1999",
     "brand": "Nintendo",
     "platform": "Nintendo 64",
@@ -1357,7 +1357,7 @@
   },
   {
     "name": "Game Boy Printer",
-    "img": "https://res.cloudinary.com/dr0wlij0c/image/upload/v1735417303/Game_Boy_Printer_ojfudf.jpg",
+    "img": "https://res.cloudinary.com/dshjlidcs/image/upload/v1738530371/Game_Boy_Printer_ojfudf_hiab3f.jpg",
     "year": "1998",
     "brand": "Nintendo",
     "platform": "Game Boy",
@@ -1371,7 +1371,7 @@
   },
   {
     "name": "DualShock 2",
-    "img": "https://res.cloudinary.com/dr0wlij0c/image/upload/v1735377394/1280px-PSX-DualShock-Controller_pdvd9i.jpg",
+    "img": "https://res.cloudinary.com/dshjlidcs/image/upload/v1738530375/1280px-PSX-DualShock-Controller_pdvd9i_mxnaok.jpg",
     "year": "2000",
     "brand": "PlayStation",
     "platform": "PlayStation 2",
@@ -1385,7 +1385,7 @@
   },
   {
     "name": "Game Boy Player",
-    "img": "https://res.cloudinary.com/dr0wlij0c/image/upload/v1735377459/game-boy-multitap-4player-adapter-1_sxb5je.jpg",
+    "img": "https://res.cloudinary.com/dshjlidcs/image/upload/v1738534541/GameCube-Game-Boy-Player_gkbux2.jpg",
     "year": "2001",
     "brand": "Nintendo",
     "platform": "GameCube",
@@ -1399,7 +1399,7 @@
   },
   {
     "name": "GameCube Link Cable",
-    "img": "https://res.cloudinary.com/dr0wlij0c/image/upload/v1735377525/61kzvuwffPL_ddezuz.jpg",
+    "img": "https://res.cloudinary.com/dshjlidcs/image/upload/v1738530374/61kzvuwffPL_ddezuz_slwo66.jpg",
     "year": "2001",
     "brand": "Nintendo",
     "platform": "GameCube",
@@ -1413,7 +1413,7 @@
   },
   {
     "name": "Stylus",
-    "img": "https://res.cloudinary.com/dr0wlij0c/image/upload/v1735377784/s-l400_fxwx4w.jpg",
+    "img": "https://res.cloudinary.com/dshjlidcs/image/upload/v1738530372/s-l400_fxwx4w_idyv2x.jpg",
     "year": "2004",
     "brand": "Nintendo",
     "platform": "Nintendo DS",
@@ -1427,7 +1427,7 @@
   },
   {
     "name": "Camera PSP",
-    "img": "https://res.cloudinary.com/dr0wlij0c/image/upload/v1735377902/products-894_mlzxgb.jpg",
+    "img": "https://res.cloudinary.com/dshjlidcs/image/upload/v1738530370/products-894_mlzxgb_dilxb5.jpg",
     "year": "2004",
     "brand": "Sony",
     "platform": "PSP",
@@ -1441,7 +1441,7 @@
 },
 {
     "name": "Kinect",
-    "img": "https://res.cloudinary.com/dr0wlij0c/image/upload/v1735397962/kinetic_fdyyby.jpg",
+    "img": "https://res.cloudinary.com/dshjlidcs/image/upload/v1738530376/kinetic_fdyyby_xdtuw1.jpg",
     "year": "2010",
     "brand": "Microsoft",
     "platform": "XBOX",
@@ -1455,7 +1455,7 @@
 },
 {
     "name": "Bluetooth Headset",
-    "img": "https://res.cloudinary.com/dr0wlij0c/image/upload/v1735397960/blueheadset_kwgktg.jpg",
+    "img": "https://res.cloudinary.com/dshjlidcs/image/upload/v1738530374/blueheadset_kwgktg_wl314u.jpg",
     "year": "2006",
     "brand": "Sony",
     "platform": "PS3",
@@ -1469,7 +1469,7 @@
 },
 {
     "name": "DualShock 4",
-    "img": "https://res.cloudinary.com/dr0wlij0c/image/upload/v1735397961/dualshock-controller_rbod8y.webp",
+    "img": "https://res.cloudinary.com/dshjlidcs/image/upload/v1738530370/71Liv-br3iL._AC_UF894_1000_QL80__ga1xvk.jpg",
     "year": "2013",
     "brand": "Sony",
     "platform": "PS4",
@@ -1483,7 +1483,7 @@
 },
 {
     "name": "Elite Controller",
-    "img": "https://res.cloudinary.com/dr0wlij0c/image/upload/v1735397961/EliteController_evcdyd.jpg",
+    "img": "https://res.cloudinary.com/dshjlidcs/image/upload/v1738530370/EliteController_evcdyd_ujyyog.jpg",
     "year": "2013",
     "brand": "Microsoft",
     "platform": "XBOX",
@@ -1497,7 +1497,7 @@
 },
 {
     "name": "Amiibo NFC Reader",
-    "img": "https://res.cloudinary.com/dr0wlij0c/image/upload/v1735397960/amiibo_tqy9kl.jpg",
+    "img": "https://res.cloudinary.com/dshjlidcs/image/upload/v1738530373/amiibo_tqy9kl_wmpmrm.jpg",
     "year": "2011",
     "brand": "Nintendo",
     "platform": "3DS",
@@ -1510,7 +1510,7 @@
     "price": 30.00
 }, {
   "name": "Pulse 3D Headset PS5",
-  "img": "https://res.cloudinary.com/dr0wlij0c/image/upload/v1735393676/Pulse_3D_Headset_PS5_mkyykv.webp",
+  "img": "https://res.cloudinary.com/dshjlidcs/image/upload/v1738530372/G03_p8a8gz.jpg",
   "year": "2020",
   "brand": "Sony",
   "platform": "PlatStation 5",
@@ -1524,7 +1524,7 @@
 },
 {
   "name": "Seagate Storage Expansion Card Xbox Series X/S 1TB",
-  "img": "https://res.cloudinary.com/dr0wlij0c/image/upload/v1735393803/Seagate_Storage_Expansion_Card_yolbuv.webp",
+  "img": "https://res.cloudinary.com/dshjlidcs/image/upload/v1738530370/61MGrHUMWzL_qe6opa.jpg",
   "year": "2020",
   "brand": "Seagate",
   "platform": "Xbox Series X",
@@ -1538,7 +1538,7 @@
 },
 {
   "name": "Dock Steam Deck",
-  "img": "https://res.cloudinary.com/dr0wlij0c/image/upload/v1735393900/Docking_Station_for_Steam_Deck_HB0702_01_700x-1_a4it64.webp",
+  "img": "https://res.cloudinary.com/dshjlidcs/image/upload/v1738530372/Sin_t%C3%ADtulo-4_m2qmn7.jpg",
   "year": "2022",
   "brand": "Valve",
   "platform": "Steam Deck",
@@ -1552,7 +1552,7 @@
 },
 {
   "name": "Joy-Con Zelda Skyward Sword",
-  "img": "https://res.cloudinary.com/dr0wlij0c/image/upload/v1735394026/Nintendo-switch-joy-con-the-legend-of-zelda-skyward-sword-hd_vaqp0a.jpg",
+  "img": "https://res.cloudinary.com/dshjlidcs/image/upload/v1738530369/Nintendo-switch-joy-con-the-legend-of-zelda-skyward-sword-hd_vaqp0a_xm6h77.jpg",
   "year": "2021",
   "brand": "Nintendo",
   "platform": "Nintendo Switch",

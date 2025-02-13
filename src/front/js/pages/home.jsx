@@ -26,7 +26,7 @@ export const Home = () => {
           {" "}
           <Link to="/suscripcion">
             <img
-              src="https://res.cloudinary.com/dr0wlij0c/image/upload/v1736453860/web-illustrations/premium-boss.png"
+              src="https://res.cloudinary.com/dshjlidcs/image/upload/v1738526760/imvwy8iwmkzk8mqskwzk-min_uhxbxt.png"
               alt=""
               className="img-fluid"
             />
@@ -35,7 +35,7 @@ export const Home = () => {
         <figure className="col-12 col-lg-6">
           <Link to="/sell">
             <img
-              src="https://res.cloudinary.com/dr0wlij0c/image/upload/v1736453861/web-illustrations/sell-items.png"
+              src="https://res.cloudinary.com/dshjlidcs/image/upload/v1738526760/efzol3qocdcsps6rlczz-min_mlcoyz.png"
               alt=""
               className="img-fluid"
             />
@@ -105,7 +105,7 @@ export const Home = () => {
       <section className="my-5 row">
         <h3 className="faq-home-h3">La mejor plataforma para comprar y vender.</h3>
         <p className="faq-home-p">Nuestros clientes nos avalan</p>
-          <div className="row pt-1 d-flex justify-content-center">
+          <div className="row pt-1 d-flex justify-content-center justify-content-md-start">
           {store.reviews?.slice(0, 4).map((review) => (
               <Reviews
                 key={review.id}
@@ -119,15 +119,15 @@ export const Home = () => {
 
       </section>
       <div className="divider"></div>
-      <section className="row faq-home">
-        <div className="col-9">
+      <section className="row faq-home d-flex justify-content-md-start justify-content-center">
+        <div className="col-10 col-lg-9">
           <h3 className="faq-home-h3">¿Tienes dudas?</h3>
           <p className="faq-home-p">Consulta nuestras <Link to="/contacto" className="faq-home-p-a">preguntas frecuentes</Link></p>
           <Link to="/suscripcion" className="faq-home-button">Go premium</Link>
           <p className="faq-home-p">Contacto directo y mucho más...</p>
         </div>
-        <figure className="col-3 text-start">
-          <img src="https://res.cloudinary.com/dr0wlij0c/image/upload/c_thumb,w_200,g_face/v1736455865/web-illustrations/r5r3z9kfuqd95yennokv.png" alt="FAQ" className="img-fluid" />
+        <figure className=" col-8 col-lg-3 text-md-start text-center ms-lg-0">
+          <img src="https://res.cloudinary.com/dshjlidcs/image/upload/v1738526760/r5r3z9kfuqd95yennokv-min_mcza4i.png" alt="FAQ" className="img-fluid" />
         </figure>
       </section>
       <div className="divider"></div>

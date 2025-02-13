@@ -3,13 +3,13 @@
     {
       "rating": 5,
       "comment": "Un juego que siempre emociona. Cada vez que lo juego, descubro algo nuevo. La jugabilidad es excelente, y siempre te mantiene en tensión.",
-      "user_id": 12,
+      "user_id": 10,
       "product_id": 56
     },
     {
       "rating": 4,
       "comment": "Funciona bastante bien, aunque me gustaría que tuviera un poco más de durabilidad. Aun así, cumple con lo que prometen y es bastante útil.",
-      "user_id": 22,
+      "user_id": 2,
       "product_id": 100
     },
     {
@@ -22,18 +22,18 @@
       "rating": 5,
       "comment": "La historia me atrapó desde el primer minuto. Una experiencia impresionante que sigue siendo relevante hoy en día. Todo en el juego es de altísima calidad.",
       "user_id": 1,
-      "product_id": 180
+      "product_id": 18
     },
     {
       "rating": 4,
       "comment": "Los gráficos son impresionantes, y la jugabilidad es dinámica. Aunque algunos personajes adicionales hubieran sido geniales, el juego sigue siendo muy entretenido.",
-      "user_id": 14,
-      "product_id": 202
+      "user_id": 4,
+      "product_id": 22
     },
     {
       "rating": 5,
       "comment": "Increíblemente hermoso. La historia te toca el corazón, y los gráficos son impresionantes. La atmósfera es perfecta para una experiencia inolvidable.",
-      "user_id": 30,
+      "user_id": 3,
       "product_id": 78
     },
     {
@@ -45,7 +45,7 @@
     {
       "rating": 4,
       "comment": "Aún siendo un dispositivo portátil antiguo, sigue ofreciendo una experiencia de juego encantadora. Ideal para nostálgicos y para disfrutar de los clásicos.",
-      "user_id": 18,
+      "user_id": 8,
       "product_id": 12
     },
     {
@@ -57,31 +57,31 @@
     {
       "rating": 4,
       "comment": "Acción sin descanso y una jugabilidad fluida, aunque la dificultad puede ser algo elevada para los menos experimentados. Aún así, muy divertido.",
-      "user_id": 16,
-      "product_id": 150
+      "user_id": 6,
+      "product_id": 78
     },
     {
       "rating": 3,
       "comment": "Un pedazo de historia en el mundo de los videojuegos, aunque al día de hoy se nota la limitación técnica si lo comparas con consolas modernas.",
       "user_id": 3,
-      "product_id": 112
+      "product_id": 90
     },
     {
       "rating": 4,
       "comment": "Una obra maestra de la estrategia. La historia es fascinante, aunque la curva de aprendizaje puede ser algo empinada para los novatos del género.",
-      "user_id": 19,
+      "user_id": 9,
       "product_id": 33
     },
     {
       "rating": 5,
       "comment": "No hay nada mejor que tener más espacio. Este producto mejora significativamente la experiencia de juego, sin necesidad de preocuparte por el almacenamiento.",
       "user_id": 7,
-      "product_id": 220
+      "product_id": 22
     },
     {
       "rating": 4,
       "comment": "Un mundo abierto impresionante, pero algunas misiones pueden sentirse algo repetitivas. Aún así, es un juego que te atrapa por su historia y su atmósfera.",
-      "user_id": 20,
+      "user_id": 8,
       "product_id": 77
     },
     {
@@ -94,7 +94,7 @@
       "rating": 4,
       "comment": "Excelente juego de terror, con una atmósfera única. Sin embargo, los puzzles pueden ser difíciles y algunos momentos pueden sentirse algo lentos.",
       "user_id": 6,
-      "product_id": 190
+      "product_id": 90
     },
     {
       "rating": 5,
@@ -105,50 +105,50 @@
     {
       "rating": 4,
       "comment": "Un juego encantador, pero algunas tareas pueden sentirse repetitivas. Aun así, tiene algo adictivo que hace que quieras seguir jugando.",
-      "user_id": 23,
+      "user_id": 3,
       "product_id": 87
     },
     {
       "rating": 5,
       "comment": "Perfecta para los jugadores que buscan flexibilidad. La capacidad de jugar en cualquier lugar y la calidad de los juegos exclusivos son su mayor atractivo.",
-      "user_id": 13,
+      "user_id": 3,
       "product_id": 22
     },
     {
       "rating": 4,
       "comment": "Es una consola increíble, pero me gustaría ver más exclusivos que realmente hagan la diferencia. Sin embargo, sigue siendo una excelente opción para muchos juegos.",
-      "user_id": 11,
-      "product_id": 132
+      "user_id": 9,
+      "product_id": 2
     },
     {
       "rating": 4,
       "comment": "Un clásico que sigue siendo tan entretenido hoy en día. Aunque los gráficos ya no son lo mejor, la historia sigue siendo increíble.",
-      "user_id": 24,
-      "product_id": 145
+      "user_id": 4,
+      "product_id": 14
     },
     {
       "rating": 5,
       "comment": "Una experiencia de juego increíblemente adictiva. Cada vez que juegas, encuentras nuevos desafíos, y el diseño artístico es impecable.",
-      "user_id": 28,
+      "user_id": 8,
       "product_id": 89
     },
     {
       "rating": 4,
       "comment": "El dispositivo ofrece una experiencia increíble. Los juegos son muy envolventes, pero algunos aún necesitan optimización para alcanzar todo su potencial.",
-      "user_id": 26,
-      "product_id": 123
+      "user_id": 6,
+      "product_id": 63
     },
     {
       "rating": 5,
       "comment": "Un juego fenomenal que te mantiene atrapado desde el primer minuto. El mundo abierto es vasto y lleno de sorpresas. Una joya de la industria.",
-      "user_id": 27,
+      "user_id": 7,
       "product_id": 54
     },
     {
       "rating": 4,
       "comment": "Un clásico que nunca pasa de moda. Aunque los controles pueden parecer simples, sigue siendo muy divertido y una excelente opción para los nostálgicos.",
       "user_id": 2,
-      "product_id": 171
+      "product_id": 71
     }
   ]
 }

@@ -12,7 +12,8 @@ export const CheckoutForm = ({ totalAmount }) => {
   const [clientSecret, setClientSecret] = useState('');
   const [loading, setLoading] = useState(false);
 
-    
+  // //formating the total amount to show decimal
+  // const formattedAmount = (totalAmount).toFixed(2).replace('.', ',');
 
   useEffect(() => {
     // Create PaymentIntent as soon as the page loads with the dynamic totalAmount
@@ -20,7 +21,7 @@ export const CheckoutForm = ({ totalAmount }) => {
       method: 'POST',
       headers: { 'Content-Type': 'application/json', 'Authorization': 'Bearer '+localStorage.getItem('Token') 
       },
-      body: JSON.stringify({ amount: totalAmount * 100, currency: 'eur' }) // Amount in cents
+      body: JSON.stringify({ amount: totalAmount * 100 , currency: 'eur' }) // Amount in cents
     })
       .then((res) => res.json())
       .then((data) => setClientSecret(data.clientSecret)); 
@@ -93,7 +94,7 @@ export const CheckoutForm = ({ totalAmount }) => {
     <form onSubmit={handleSubmit} className="stripey">
       <CardElement />
       <button className="btn-stripe" type="submit" disabled={!stripe || loading}>
-        <strong>Pay</strong>
+        <strong>Pagar</strong>
       </button>
     </form>
   );

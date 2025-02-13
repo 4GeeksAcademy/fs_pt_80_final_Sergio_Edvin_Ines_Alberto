@@ -15,46 +15,46 @@ export const VideogameCard = (props) => {
 
   const handleFav = (e) => {
     e.stopPropagation();
-    if (!store.isLogged) {
-      if (!store.showLoginModal) {
-        actions.setShowLoginModal(true);
-      }else {
-        alert("Debes iniciar sesión para añadir artículos a favoritos");
-      }
-    } else {
-  
+    if (store.user) {
       const newFav = {
         user_id: store.user.id,
         product_id: props.id,
       };
       actions.toggleFav(newFav);
     }
-  };
-const handleShopping = () => {
-  if (!store.isLogged) {
-    if (!store.showLoginModal) {
-      
-      actions.setShowLoginModal(true); 
-    } else {
-      alert("Debes iniciar sesión para añadir artículos al carrito");
+    else {
+      const newFav = {
+        product_id: props.id,
+      };
+      actions.toggleLocalFav(newFav);
     }
-  } else {
-   
-    const newShoppingItem = {
-      user_id: store.user.id,
-      product_id: props.id,
-    };
-    actions.toggleCart(newShoppingItem);
   }
-};
-  
-  const isFavorite = store.user?.favorites?.some((fav) => 
-    fav === props.id) || false;
+  const handleShopping = () => {
+    if (store.user) {
+      const newShoppingItem = {
+        user_id: store.user.id,
+        product_id: props.id,
+      };
+      actions.toggleCart(newShoppingItem);
+    }
+    else {
+      const newShoppingItem = {
+        product_id: props.id,
+        name: props.name,
+        img: props.img,
+        price: props.price,
+      };
+      actions.toggleLocalCart(newShoppingItem);
+    }
+  }
 
+  const isFavorite = store.user
+  ? store.user.favorites?.some((fav) => fav === props.id)
+  : store.localFavorites?.some((fav) => fav.product_id === props.id) || false;
 
-  const isInShopping = store.shoppingCart
-    ? store.shoppingCart.some((item) => item.id === props.id)
-    : false
+  const isInShopping = store.user
+  ? store.shoppingCart?.some((item) => item.id === props.id)
+  : store.localShoppingCart?.some((item) => item.product_id === props.id)
   return (<>
     <div className="col-10 col-md-5 col-xl-4" >
       <div className={isPromoted ? "videogame-sm-bg videogame-sm-promoted" : "videogame-sm-bg"} onClick={handleCardClick} >
@@ -67,7 +67,7 @@ const handleShopping = () => {
       </div>
 
       <div className="px-0 mt-2">
-        <span className="small-c-brand"onClick={handleCardClick}>{props.brand}</span>
+        <span className="small-c-brand" onClick={handleCardClick}>{props.brand}</span>
         <h5 className="small-c-name" onClick={handleCardClick}>{props.name}</h5>
         <div className="d-flex justify-content-between">
           <span className="small-c-price">

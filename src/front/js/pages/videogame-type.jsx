@@ -28,13 +28,13 @@ export const VideogameType = () => {
         <div className="home-container">
             <div className="row d-flex justify-content-center my-5 icons-store">
                 <figure className="col-4 col-lg-2">
-                    <img src="https://res.cloudinary.com/dr0wlij0c/image/upload/c_thumb,w_200,g_face/v1737114585/icons-store-20_wbf0e6.png" alt="Consolas" className="img-fluid" onClick={() => handleCategoryClick("consolas")} />
+                    <img src="https://res.cloudinary.com/dshjlidcs/image/upload/c_thumb,w_200,g_face/v1738527219/web-img/vhxp03yiac2oxegzcy9a.png" alt="Consolas" className="img-fluid" onClick={() => handleCategoryClick("consolas")} />
                 </figure>
                 <figure className="col-4 col-lg-2">
-                    <img src="https://res.cloudinary.com/dr0wlij0c/image/upload/c_thumb,w_200,g_face/v1737114584/icons-store-22_csj2sw.png" alt="Videojuegos" className="selected img-fluid" onClick={() => handleCategoryClick("videojuegos")} />
+                    <img src="https://res.cloudinary.com/dshjlidcs/image/upload/c_thumb,w_200,g_face/v1738527219/web-img/mufcnmnv4pcgs71dyhyc.png" alt="Videojuegos" className="selected img-fluid" onClick={() => handleCategoryClick("videojuegos")} />
                 </figure>
                 <figure className="col-4 col-lg-2">
-                    <img src="https://res.cloudinary.com/dr0wlij0c/image/upload/c_thumb,w_200,g_face/v1737114584/icons-store-23_dv9xax.png" alt="Accesorios" className="img-fluid" onClick={() => handleCategoryClick("accesorios")} />
+                    <img src="https://res.cloudinary.com/dshjlidcs/image/upload/c_thumb,w_200,g_face/v1738527219/web-img/ciyiiqpzbxoj2jn37kqu.png" alt="Accesorios" className="img-fluid" onClick={() => handleCategoryClick("accesorios")} />
                 </figure>
             </div>
             <h3 className="t-seccion">{type}</h3>

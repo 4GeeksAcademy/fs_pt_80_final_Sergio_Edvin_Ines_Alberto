@@ -2,14 +2,14 @@
 
 .body-suscription {
     color: #fff;
-    font-family: "Kanit", serif;
     text-align: center;
     margin: 0;
     padding: 0;
 }
 
 .h3-suscription {
-    margin: 20px 0;
+    font-family: "Kanit", serif;
+    margin: auto;
     color: #888888ea;
 }
 
@@ -37,7 +37,7 @@
 }
 
 .basic {
-    background-color: #555;
+    background-color: #5C5C60;
     color: #fff;
     margin-right: -50px;
     z-index: 0;
@@ -53,6 +53,23 @@
     transition: all ease 0.7s;
 }
 
+.icon-suscription{
+    font-size: 10px;
+    margin-top: -5px;
+    margin-right: 5px;
+
+}
+.icon-suscription-2{
+    font-size: 13px;
+    margin-top: -5px;
+    margin-right: 5px;
+    color: #FCEE21;
+
+}
+.premium-img{
+    width: 45% !important;
+    margin-top: -55px !important;
+}
 .card img {
     width: 150px;
     margin: 20px auto;
@@ -63,10 +80,8 @@
     padding: 0;
     margin: 20px 0;
     color: #fff;
-}
-
-.card ul li {
-    margin: 15px 0;
+    font-size: 20px;
+    line-height: 1.6;
 }
 
 .premium .price {
@@ -74,24 +89,21 @@
     color: #fff;
 }
 
-.join-btn {
-    background-color: #FCEE21;
-    border: none;
-    padding: 10px 20px; 
-    font-size: 1.5rem;
-    color: #000;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-top: 20px;
-    transition: background-color 0.3s ease;
-    width: 250px; 
-}
-
-.join-btn:hover {
-    background-color: #ffdd33;
-}
 
 .text {
     font-size: 1.15rem;
 }
 
+
+@media(max-width: 767px){
+    .h3-suscription{
+        width: 80%;
+    }
+    .basic{
+        display: none;
+    }
+    .premium{
+        width: 80%;
+        margin: auto;
+    }
+}

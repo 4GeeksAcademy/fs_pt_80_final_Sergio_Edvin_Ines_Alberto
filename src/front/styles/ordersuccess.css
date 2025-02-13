@@ -1,57 +1,48 @@
-/* .home-button {
-    background-color:rgb(0, 255, 234);
-    color: black;
-    border-radius: 10px;
-    border: none;
-    font-size: 1rem;
-} */
-
 .home-button {
-    background-color: #FCEE21;
-    border: none;
-    padding: 10px 20px; 
-    font-size: 1.5rem;
-    color: #000;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-top: 20px;
-    transition: background-color 0.3s ease;
-    width: 250px; 
-}
+    width: 40%;
+    position: absolute;
+    bottom: 5%;
+    margin-left: -20%;
+} 
 
-.home-button:hover {
-    background-color: #33f8ff;
-}
+
+
 
 .order-container {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 20px;
+  
 }
 
 .order-card {
+    position: relative;
     background: rgb(51, 0, 0);
     border-radius: 15px;
     width: 600px;
     padding: 24px;
     text-align: center;
+    background-image: url(https://res.cloudinary.com/dshjlidcs/image/upload/v1738526761/uvyx3nvtoxpfwynbwgry-min_cammqk.png);
+    background-size: cover;
+    background-position: center center;
+    min-height: 800px;
 }
 
-.order-title{
-    font-size: 1.5rem;
-    margin-bottom: 15px;
+.order-success-title{
+    margin-top: -20px;
+    margin-bottom: 20px;
+    color: #3A39FF;
+    font-size: 20px;
+    text-align: center;
+    font-weight: 600;
+
 }
 
-.success-img{
-    width: 250px;
-    display: block;
-    margin: 10px auto; 
-    border-radius: 10px; 
-
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-}
-
-.success-img:hover{
-    transform: scale(1.2); 
+.order-details{
+    width: 40%;
+    margin-top: 45%;
+    color: black;
+    margin-left: 30%;
+    text-align: left;
 }

@@ -5,11 +5,16 @@ import { Context } from "../store/appContext";
 export const PhotoUpload = ({ onUploadSuccess }) => {
     const { actions } = useContext(Context);
     const [selectedFile, setSelectedFile] = useState(null);
+    const [previewUrl, setPreviewUrl] = useState(null);
     const [uploading, setUploading] = useState(false);
     const [uploadedUrl, setUploadedUrl] = useState('');
 
     const handleFileChange = (e) => {
-        setSelectedFile(e.target.files[0]);
+        const file = e.target.files[0];
+        if (file) {
+            setSelectedFile(file);
+            setPreviewUrl(URL.createObjectURL(file)); 
+        }    
     };
 
     const handleUpload = async () => {
@@ -26,6 +31,7 @@ export const PhotoUpload = ({ onUploadSuccess }) => {
             setUploadedUrl(imageUrl);
             alert("Foto subida con éxito ✨ ");
             onUploadSuccess(imageUrl);
+            setPreviewUrl(imageUrl);
         } else {
             alert("Error al subir la foto 📢");
         }
@@ -35,7 +41,11 @@ export const PhotoUpload = ({ onUploadSuccess }) => {
     return (
         <div className="photo-upload">
             <label htmlFor="photo-input" className="__image__">
-                 <span className="fa-solid fa-plus"></span>
+                {previewUrl ? (
+                    <img src={previewUrl} alt="Vista previa" className="__preview_image__" />
+                ) : (
+                    <span className="fa-solid fa-plus"></span>
+                )}
             </label>
             <input
                 type="file"

@@ -1,15 +1,35 @@
-.premium-button {
-    background-color: #FCEE21;
-    border: none;
-    padding: 10px 20px; 
-    font-size: 1.5rem;
-    color: #000;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-top: 20px;
-    transition: background-color 0.3s ease;
-    width: 250px; 
+.contact-container{
+    width: 65%;
+    margin: auto;
 }
-.premium-button:hover {
-    background-color: #ffdd33;
+.contact-container-p{
+   font-family: kanit;
+   font-weight: 200;
+}
+
+.my-accordion{
+    background-color: #19191d;
+    color: white;
+}
+
+.accordion-button:not(.collapsed),.my-accordion:focus, .my-accordion:hover {
+    background-color:#19191d;
+    color: #FCEE21;
+}
+
+.header-faq{
+    font-size: 20px;
+}
+
+@media(max-width: 767px){
+    .contact-container{
+        width: 85%;
+    
+    }
+    .contact-container-p{
+        font-size: 14px;
+    }
+    .header-faq{
+        font-size: 16px;
+    }
 }

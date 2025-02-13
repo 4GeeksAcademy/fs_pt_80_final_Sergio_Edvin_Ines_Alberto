@@ -4,15 +4,19 @@
   padding: 20px;
 
 }
-
+.img-fluid-checkout{
+  width: 160px !important;
+  height: 160px !important;
+  margin-right: 5%;
+}
 .shipping-address,
 .product-list {
   background-color: #ffffff;
   border: 1px solid #ddd;
   padding: 15px;
-  border-radius: 10px;
-
+  border-radius: 10px !;
 }
+
 
 .shipping-address h2,
 .product-list h2 {
@@ -54,6 +58,7 @@
 }
 
 .order-summary {
+  width: 70%;
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -67,7 +72,10 @@
 }
 
 .total {
+  text-align: center;
   margin-top: 15px;
+  padding: 3px 13px;
+  width: 30%;
   font-size: 1.2rem;
   color: #000;
 }
@@ -82,23 +90,17 @@
   justify-content: space-between;
  }
  
- .user-info img {
-  width: 175px;
-  height: 150px;
-  border-radius: 50%;
-  object-fit: cover;
-  margin-left: 20px;
+ .user-details-checkout{
+  font-family: kanit;
+  font-size: 22px;
+  font-weight: 300;
+  background-color: #19191dcf;
+  padding: 10px 16px;
+  border-radius: 10px;
+  color: #eee;
  }
  
- @media (max-width: 768px) {
-  .user-info > div {
-    flex-direction: column;
-  }
-  
-  .user-info img {
-    margin: 0 auto 10px;
-  }
- }
+
  .subscription-option {
  margin: 20px 0;
  padding: 15px;
@@ -126,3 +128,24 @@
 .shipping-price{
   color: #000;
 }
+
+@media (max-width: 768px) {
+  
+.order-summary {
+  width: 90%;}
+
+  .user-info > div {
+    width: 100%;
+    flex-direction: column;
+    margin-left: -5%;
+  }
+  
+  .user-info img {
+    margin: 0 auto 10px;
+
+  }
+  .total {
+    width: 55%;
+  }
+  
+ }

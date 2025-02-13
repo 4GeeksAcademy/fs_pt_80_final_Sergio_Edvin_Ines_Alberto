@@ -9,7 +9,7 @@ export const Footer = () => (
 			<p className="copyrigth"><b>© FinalBoss</b> 2025</p>
 		</div>	
 		<div className="text-center col-4 ms-3">
-			<img src="https://res.cloudinary.com/dr0wlij0c/image/upload/c_thumb,w_200,g_face/v1736524948/web-illustrations/tneodtjquec1aboexsmw.png" className="img-fluid" alt="" />
+			<img src="https://res.cloudinary.com/dshjlidcs/image/upload/v1738526761/tneodtjquec1aboexsmw-min_bfkxfx.png" className="img-fluid" alt="" />
 		</div>
 		<div className="col-4 text-end footer-menu mt-2 me-0 p-0 d-flex flex-column">	
 			

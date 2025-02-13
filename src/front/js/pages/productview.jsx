@@ -99,7 +99,7 @@ export const ProductView = () => {
                                 <p className="__info_label__">Vendido por:</p>
                                 <div className="d-flex align-items-col ms-2">
                                     <img
-                                        src={"https://res.cloudinary.com/dr0wlij0c/image/upload/v1736453861/web-illustrations/premium-user.png"}
+                                        src={"https://res.cloudinary.com/dshjlidcs/image/upload/v1738526760/t9wliafde7eongd3umez-min_usjcnx.png"}
                                         className="__seller_avatar__"
                                     />
                                     <span className="ms-2">{buyer}</span>

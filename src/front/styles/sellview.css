@@ -103,12 +103,13 @@ body {
 .__price_input__ {
     background-color: rgb(41, 189, 238);
     border: none;
-    color:white; 
+    color: black; 
     padding: 0.5rem 1rem; 
     border-radius: 15px; 
     text-align: center;
     max-width: 150px; 
     font-size: 1.0rem; 
+    font-weight: bold;
 }
 
 .__price_input__::placeholder {

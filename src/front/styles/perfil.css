@@ -1,269 +1,266 @@
 .bg-image {
-    height: 100vh; 
-}
-
-.bg-image img {
-    height: 100%; 
-    object-fit: cover; 
+  height: 100vh;
+  background-image: url(https://res.cloudinary.com/dshjlidcs/image/upload/v1738527220/web-img/wh0uqjc5on0dx3e3rp44.png);
+  background-size: cover;
+  background-position: right top;
 }
 
 .form-container {
-    max-width: 100%;
-    width: 100%;
-    color: #4c4b4b;
-    margin-bottom: 20px;
-    padding-bottom: 20px;
+  max-width: 100%;
+  width: 100%;
+  color: #5c5c60;
+  padding-bottom: 20px;
 }
 
-
+.my-form-control {
+  background-color: #29292c;
+  padding: 5px 10px;
+  color: #ededef;
+  border: none;
+  border-radius: 50px;
+}
+.my-form-control:focus,
+.my-form-control:active {
+  outline: 1px solid #fced2186;
+  color: #ffffff;
+  box-sizing: border-box;
+}
 
 .profile-icon {
-    display: block;
-    margin: 0 auto;
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
+  display: block;
+  margin: 0 auto;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
 }
 
 .form-control {
-    border-radius: 20px; 
+  border-radius: 20px;
 }
-
-.btn-crear-perfil {
-    background-color: #FCEE21; 
-    color: #000; 
-    font-family: "Kode Mono", serif;
-    font-size: 3rem; 
-    font-weight: bold; 
-    border: none; 
-    border-radius: 5px; 
-    padding: 2.5% 10%; 
-    text-align: center;
-    display: block;
-    margin: 0 auto; 
-    cursor: pointer; 
-    transition: transform 0.2s ease;
-    margin-bottom: 20px;
+.my-form-column {
+  margin-left: -5%;
+  margin-top: -5%;
 }
-
-.btn-crear-perfil:hover {
-    transform: scale(1.05);
-    background-color: #ffd700;
-}
-
-.btn-crear-perfil:active {
-    transform: scale(0.95);
-}
-
-
-
 
 .btn-primary {
-    background-color: #007bff;
-    color: #fff;
-    font-weight: bold;
+  background-color: #3a39ff;
+  color: #fff;
+  font-weight: bold;
 }
 
 .btn-secondary {
-    background-color: #6c757d;
-    color: #fff;
-    font-weight: bold;
+  font-size: 20px;
+  border: none;
+  background-color: transparent !important;
+  color: #08b5f9 !important;
+  font-weight: 400;
+  text-decoration: underline;
+}
+
+.edit-btn{
+  font-size: 20px;
+  border: none;
+  background-color: transparent;
+  color: #fff;
+  font-weight: 400;
 }
 
 .profile-container-log {
-    width: 70%;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
+  width: 65%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .profile-header-log {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    margin-bottom: 20px;
+  display: flex;
+  margin-bottom: 20px;
 }
 
 .profile-avatar-container-log {
-    flex-shrink: 0;
+  flex-shrink: 0;
 }
 
 .profile-avatar-log {
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
-    object-fit: cover;
+  margin-left: 5%;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  object-fit: cover;
 }
 
 .profile-info-log {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    color: #fff;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-left: 10%;
+  margin-top: 10%;
+  color: #fff;
 }
 
 .profile-name-log {
-    font-size: 1.8rem;
-    font-weight: bold;
+  font-size: 1.9rem;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
-.profile-email-log, .profile-address-log {
-    font-size: 1rem;
-    color: #ccc;
+.profile-email-log {
+  font-family: kanit;
+  font-size: 20px;
+  margin-top: -10px;
+  color: #afafb2;
+  font-weight: 200;
+}
+
+.profile-address-log {
+  text-transform: capitalize;
+  font-family: kanit;
+  font-size: 20px;
+  color: #afafb2;
 }
 
 .profile-stats-log {
-    display: flex;
-    gap: 10px;
-    margin-top: 10px;
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
 }
 
-.followers-log, .following-log {
-    background-color: #444;
-    padding: 5px 10px;
-    border-radius: 5px;
-    font-size: 0.9rem;
+.followers-log,
+.following-log {
+  font-family: kanit;
+  font-size: 18px;
+  background-color: #5c5c60;
+  padding: 5px 10px;
+  border-radius: 30px;
+  margin-right: 10px;
+  font-weight: 300;
 }
 
 .profile-description-log {
-    text-align: center;
-    color: #eee;
-}
-
-.btn-premium-log {
-    padding: 10px 20px;
-    background-color: #ffd700;
-    color: #000;
-    font-weight: bold;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: transform 0.2s ease;
-}
-
-.btn-premium-log:hover {
-    transform: scale(1.05);
-    background-color: #e5c100;
-}
-
-.favorites-container-log, .showcase-container-log {
-    display: flex;
-    gap: 15px;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.favorite-item-log, .showcase-item-log {
-    background-color: #333;
-    padding: 10px;
-    border-radius: 10px;
-    text-align: center;
-    color: #fff;
-    width: 150px;
-}
-
-.favorite-img-log, .showcase-img-log {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-}
-
-h2 {
-    color: #fff;
-    font-size: 1.5rem;
-    margin-bottom: 10px;
+  font-family: kanit;
+  font-size: 22px;
+  font-weight: 300;
+  background-color: #19191d;
+  padding: 10px 16px;
+  border-radius: 10px;
+  color: #eee;
 }
 
 .user-list-btn {
-    background-color: blue;
-    color: white;
-    border: none;
-    padding: 8px 15px;
-    border-radius: 5px;
-    font-size: 14px;
-    cursor: pointer;
-    margin-left: 10px;
+  background-color: blue;
+  color: white;
+  font-family: kanit;
+  padding: 5px 10px;
+  border-radius: 30px;
+  font-weight: 300;
+  border: none;
+  margin-top: -5px;
+  font-size: 18px;
+  text-align: center;
 }
 
-.user-list-btn:hover {
-    background-color: darkblue;
+.h2-perfil {
+  color: #fff;
+  font-size: 1.5rem;
+  margin-top: 10px;
+  margin-bottom: -20px;
 }
 
-.user-list-modal {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background: #333;
-    color: white;
-    padding: 20px;
-    border-radius: 10px;
-    width: 400px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
-    z-index: 1000;
+.users-offcanvas {
+  border: none;
+  background-color: #19191d;
 }
 
-.modal-title {
-    text-align: center;
-    margin-bottom: 15px;
+.user-name-link {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #ffffff;
+}
+.user-name-link:hover {
+  color: #08b5f9;
 }
 
-.close-modal {
-    background: red;
-    color: white;
-    border: none;
-    padding: 5px 10px;
-    border-radius: 5px;
-    cursor: pointer;
-    float: right;
+.user-info {
+  margin-left: 20px;
 }
-
-.user-list {
-    max-height: 300px;
-    overflow-y: auto;
+.user-description {
+  font-family: kanit;
+  font-weight: 200;
+  font-size: 16px;
+  color: #afafb2;
+  margin-top: -10px;
+  margin-right: 120px;
 }
-
-.user-item {
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
-    background: #444;
-    padding: 10px;
-    border-radius: 8px;
-}
-
 .user-avatar {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    margin-right: 10px;
-}
-
-.btn-follow {
-    background-color: blue;
-    color: white;
-    border: none;
-    padding: 5px 10px;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-left: auto;
-}
-
-.btn-follow:hover {
-    background-color: darkblue;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
 }
 
 .profile-avatar-container-log {
-    display: flex;
-    flex-direction: column; /* Asegura que los elementos estén en columna */
-    align-items: center; /* Centra los elementos horizontalmente */
-    gap: 10px; /* Espacio entre la imagen y el botón */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
 }
 
-.logout-button-container {
-    width: 100%; /* Asegura que ocupe todo el ancho disponible */
-    display: flex;
-    justify-content: center; /* Centra el botón horizontalmente */
+.btn-seguir {
+  margin-top: 5px;
+  color: #fcee21;
+  border-radius: 30px;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+.btn-seguido {
+  margin-top: 5px;
+  color: #ffffff;
+  font-weight: 400;
+  border-radius: 30px;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+.loging-data{
+  width: 60%;
+  margin: auto;
+  font-size: 2rem;
+  color: #eee;
+}
+@media (max-width: 1400px) {
+  .user-description {
+    display: none;
+  }
+}
+@media (max-width: 767px) {
+  .my-form-column {
+    margin: auto;
+  }
+
+  .user-name-link {
+    font-size: 1rem;
+  }
+
+  .btn-seguido,
+  .btn-seguir {
+    margin-top: 0;
+    font-size: 15px;
+  }
+
+  .profile-avatar-log {
+    width: 100px;
+    height: 100px;
+  }
+
+  .followers-log,
+  .following-log {
+    display: none;
+  }
+
+  .profile-info-log {
+    margin-left: 0%;
+  }
 }

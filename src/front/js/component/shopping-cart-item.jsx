@@ -7,12 +7,23 @@ export const CartItem = (props) => {
     const { store, actions } = useContext(Context)
 
     const handleShopping = () => {
-        const newShoppingItem = {
-            user_id: store.user.id, 
+        if (store.user) {
+          const newShoppingItem = {
+            user_id: store.user.id,
             product_id: props.id,
-        };
-        actions.toggleCart(newShoppingItem);
-      };
+          };
+          actions.toggleCart(newShoppingItem);
+        }
+        else {
+          const newShoppingItem = {
+            product_id: props.id,
+            name: props.name,
+            img: props.img,
+            price: props.price,
+          };
+          actions.toggleLocalCart(newShoppingItem);
+        }
+      }
 
     const user = store.users.find((user) => user.id === props.seller_id);
 
