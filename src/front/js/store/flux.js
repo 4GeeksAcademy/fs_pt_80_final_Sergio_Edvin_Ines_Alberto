@@ -101,35 +101,87 @@ const getState = ({ getStore, getActions, setStore }) => {
     
     
 
-      register: async (formData) => {
-        try {
-            console.log("Datos del formulario para registro:", formData);  // Verifica que los datos son correctos
-    
-            const response = await fetch(`${process.env.BACKEND_URL}/api/register`, {
-                method: "POST",
-                headers: {
-                    "Content-Type": "application/json",
-                },
-                body: JSON.stringify(formData),
-            });
-    
-            const data = await response.json();
-    
-            if (response.ok) {
-                // Registro exitoso
-                console.log("Token:", data.token);
-                console.log("Usuario:", data.user);
-                localStorage.setItem("Token", data.token);
-                localStorage.setItem("user", JSON.stringify(data.user));
-                setStore({ isLogged: true, Token: data.token, user: data.user });
-            } else {
-                // Si no fue exitoso, mostrar mensaje de error
-                console.error('Error en el registro:', data.msg || 'Error desconocido');
-            }
-        } catch (error) {
-            console.error("Error en el registro:", error);
-        }
-    },
+    register: async (formData) => {
+      try {
+          console.log("Datos del formulario para registro:", formData);
+  
+          //Recuperar los datos locales antes de registrarse
+          let localFavorites = JSON.parse(localStorage.getItem("localFavorites")) || [];
+          let localShoppingCart = JSON.parse(localStorage.getItem("localShoppingCart")) || [];
+  
+          console.log("Favoritos antes del registro:", localFavorites);
+          console.log("Carrito antes del registro:", localShoppingCart);
+  
+          //Enviar los datos del usuario para registrarse
+          const response = await fetch(`${process.env.BACKEND_URL}/api/register`, {
+              method: "POST",
+              headers: {
+                  "Content-Type": "application/json",
+              },
+              body: JSON.stringify(formData),
+          });
+  
+          const data = await response.json();
+  
+          if (response.ok) {
+              console.log("Registro exitoso, usuario:", data.user);
+              console.log("Token recibido:", data.token);
+  
+              localStorage.setItem("Token", data.token);
+              localStorage.setItem("user", JSON.stringify(data.user));
+              setStore({ isLogged: true, Token: data.token, user: data.user });
+  
+              const userId = data.user.id;
+  
+              // 🔹 Asociar favoritos y carrito al nuevo usuario
+              const formattedFavorites = localFavorites.map(fav => ({
+                  product_id: fav.product_id,
+                  user_id: userId
+              }));
+  
+              const formattedShoppingCart = localShoppingCart.map(item => ({
+                  product_id: item.product_id,
+                  user_id: userId
+              }));
+  
+              console.log("Enviando datos al backend tras registro:", { userId, formattedFavorites, formattedShoppingCart });
+  
+              //Enviar los datos al backend para fusionarlos con la nueva cuenta
+              const mergeResponse = await fetch(`${process.env.BACKEND_URL}/api/merge-data`, {
+                  method: "POST",
+                  headers: {
+                      "Content-Type": "application/json",
+                      Authorization: `Bearer ${data.token}`
+                  },
+                  body: JSON.stringify({ userId, localFavorites: formattedFavorites, localShoppingCart: formattedShoppingCart })
+              });
+  
+              const mergeData = await mergeResponse.json();
+              console.log("Respuesta de la fusión de datos tras registro:", mergeData);
+  
+              if (mergeResponse.ok) {
+                  console.log("Datos locales fusionados con éxito tras registro.");
+  
+                  //Vaciar favoritos y carrito locales
+                  localStorage.removeItem("localFavorites");
+                  localStorage.removeItem("localShoppingCart");
+                  setStore({ localFavorites: [], localShoppingCart: [] });
+  
+                  //Recargar el carrito desde el backend
+                  await getActions().userShoppingCart();
+                  await getActions().getFavorites();
+              } else {
+                  console.error("Error al fusionar datos tras registro:", mergeData.msg);
+              }
+          } else {
+              console.error("Error en el registro:", data.msg || "Error desconocido");
+          }
+      } catch (error) {
+          console.error("Error en el registro:", error);
+      }
+  },
+  
+  
     
       isLogged: async () => {
         try {
@@ -378,33 +430,28 @@ const getState = ({ getStore, getActions, setStore }) => {
 
       toggleLocalFav: (newFav) => {
         const store = getStore();
-
+    
         if (store.isLogged) {
-          getActions().toggleFav(newFav);  
-          return;
-      }
-  
-      const isFavorite = store.localFavorites.some(
-          (el) => el.product_id === newFav.product_id
-      );
-  
-      if (isFavorite) {
-          setStore({
-              localFavorites: store.localFavorites.filter(
-                  (el) => el.product_id !== newFav.product_id
-              ),
-          });
-      } else {
-          setStore({
-              localFavorites: [
-                  ...store.localFavorites,
-                  { product_id: newFav.product_id },
-              ],
-          });
-      }
-  
-      console.log("Favoritos locales actualizados:", getStore().localFavorites);
-  },
+            getActions().toggleFav(newFav);  
+            return;
+        }
+    
+        let updatedFavorites = [...store.localFavorites];
+    
+        // Verificar si el producto ya está en favoritos
+        const isFavorite = updatedFavorites.some(el => el.product_id === newFav.product_id);
+    
+        if (isFavorite) {
+            updatedFavorites = updatedFavorites.filter(el => el.product_id !== newFav.product_id);
+        } else {
+            updatedFavorites.push({ product_id: newFav.product_id });
+        }
+    
+        setStore({ localFavorites: updatedFavorites });
+        localStorage.setItem("localFavorites", JSON.stringify(updatedFavorites)); // Guardar en localStorage
+    
+        console.log("Favoritos locales guardados en localStorage:", JSON.parse(localStorage.getItem("localFavorites")));
+    },
 
       //--------------------------------------------------------SHOPPING CART--------------------------------------------
       userShoppingCart: async () => {
@@ -463,36 +510,27 @@ const getState = ({ getStore, getActions, setStore }) => {
 
       toggleLocalCart: (newShoppingItem) => {
         const store = getStore();
-
-        const isInCart = store.localShoppingCart.some(
-          (el) => (el.product_id
-            === newShoppingItem.product_id
-          )
-        );
-
+    
+        let updatedCart = [...store.localShoppingCart];
+    
+        const isInCart = updatedCart.some(el => el.product_id === newShoppingItem.product_id);
+    
         if (isInCart) {
-
-          setStore({
-            localShoppingCart: store.localShoppingCart.filter(
-              (el) => !((el.product_id
-                === newShoppingItem.product_id
-              ))
-            ),
-          });
+            updatedCart = updatedCart.filter(el => el.product_id !== newShoppingItem.product_id);
         } else {
-
-          setStore({
-            localShoppingCart: [
-              ...store.localShoppingCart,
-              { product_id: newShoppingItem.product_id,
+            updatedCart.push({
+                product_id: newShoppingItem.product_id,
                 name: newShoppingItem.name,
                 img: newShoppingItem.img,
-                price: newShoppingItem.price,
-               },
-            ],
-          });
+                price: newShoppingItem.price
+            });
         }
-      },
+    
+        setStore({ localShoppingCart: updatedCart });
+        localStorage.setItem("localShoppingCart", JSON.stringify(updatedCart)); //Guardar en localStorage
+    
+        console.log("Carrito local guardado en localStorage:", JSON.parse(localStorage.getItem("localShoppingCart")));
+    },
 
       //------------------------------------------------------UPLOAD_PHOTO-----------------------------------------------
 

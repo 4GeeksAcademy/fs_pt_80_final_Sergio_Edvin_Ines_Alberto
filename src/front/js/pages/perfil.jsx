@@ -128,12 +128,22 @@ export const Perfil = () => {
     };
     const handleSubmit = async (e) => {
         e.preventDefault();
-        const updatedUser = await actions.updateUserProfile(store.user.id, editData);
+    
+        const sanitizedData = {
+            userName: editData.userName.trim() || userData.userName, 
+            address: editData.address.trim() || userData.address,
+            city: editData.city.trim() || userData.city,
+            postalCode: editData.postalCode ? parseInt(editData.postalCode, 10) : userData.postalCode, // Convierte a número
+            description: editData.description.trim() || userData.description
+        };
+    
+        const updatedUser = await actions.updateUserProfile(store.user.id, sanitizedData);
     
         if (updatedUser) {
-           
             setUserData(updatedUser);
-            setIsEditing(false);  // Cierra el formulario de edición
+            setIsEditing(false); // Cierra el formulario de edición
+            window.location.reload(); // Recarga la página
+
         }
     };
     const [isEditing, setIsEditing] = useState(false); // Controla si el formulario de edición está visible
@@ -184,8 +194,8 @@ export const Perfil = () => {
                         </p>
                         <div className="profile-stats-log row justify-content-between">
                             <div className="col-md-6 col-12">
-                                <span className="followers-log">{userData.followed_by.length} Seguidores</span>
-                                <span className="following-log">{userData.following_users.length} Seguidos</span>
+                                <span className="followers-log">{(userData.followed_by || []).length} Seguidores</span>
+                                <span className="following-log">{(userData.following_users || []).length} Seguidos</span>
                             </div>
 
                             <span
